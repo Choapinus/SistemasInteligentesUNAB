@@ -9,19 +9,13 @@ import math
 from etiquetas_class import Etiqueta
 
 
-"""
-filtrar cuanta data en % pertenece a cada clase
-calcular entropia del dataset
-"""
-
 archivo = raw_input('ingrese nombre csv: ')
 
-#with open('../Etiquetas-(a.valenzuelagonzlez@uandresbello.edu).csv', 'rb') as f:
 with open(archivo, 'rb') as f:
 	reader = csv.reader(f)
 	data = list(reader)
 	#print data[0] #['id_perfil;clase;lugares']
-	#aux = Etiqueta(data[154]) # 154 = world
+
 	del data[0]
 
 	etiquetas = {
