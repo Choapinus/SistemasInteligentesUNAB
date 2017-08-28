@@ -1,0 +1,4 @@
+https://plot.ly/python/
+
+https://www.highcharts.com/demo
+http://jsfiddle.net/gh/get/library/pure/highcharts/highcharts/tree/master/samples/highcharts/demo/pie-basic/

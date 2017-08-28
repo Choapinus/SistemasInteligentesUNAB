@@ -1,21 +1,26 @@
 import csv
 import sys
-import pip
-
-pip.main(['install', 'pyperclip'])
-
 import pyperclip
 import math
+from difflib import SequenceMatcher
 from etiquetas_class import Etiqueta
 
+#compara dos strings y retorna un % de similitud
+def similar(a, b):
+    return SequenceMatcher(None, a, b).ratio()
 
-archivo = raw_input('ingrese nombre csv: ')
+"""
+TODO:
+meter texto de perfil en objeto Etiqueta (para que?)
+ver si se puede automatizar el calculo de la wea que te mando el jean (informacion nosequewea)
+archivo .dat se lee con open(nombre, 'r'), splitear por '\n' y se obtiene un string con id y perfil en html
+"""
 
-with open(archivo, 'rb') as f:
+with open('../Etiquetas-(a.valenzuelagonzlez@uandresbello.edu).csv', 'rb') as f:
 	reader = csv.reader(f)
 	data = list(reader)
 	#print data[0] #['id_perfil;clase;lugares']
-
+	#aux = Etiqueta(data[154]) # 154 = world
 	del data[0]
 
 	etiquetas = {
@@ -43,14 +48,28 @@ with open(archivo, 'rb') as f:
 
 
 	#entropy calculation
-	#entropy_world = math.log(float(len(etiquetas['World']))/2000, 2)
-	
-	#print '\ndone'
-	#print 'entropy_world:',entropy_world*float(len(etiquetas['World']))/2000
+
+	entropy = 0
+
+	for etiqueta in etiquetas:
+		#print 'entropy ', etiqueta, math.log(float(len(etiquetas[etiqueta]))/2000, 2)
+		entropy += math.log(float(len(etiquetas[etiqueta]))/2000, 2)*-1
+
+	print 'entropy:', entropy
+
+	country_count = set()
+
+	for i in range(len(etiquetas['World'])):
+		print etiquetas['World'][i].lugares
+		
+
+	print '\ndone'
+
+
 
 	"""
 	#show cute data
-	for i in range(len(data)):
+	for i in range(100):
 		print 'perfil:', data[i]
 		aux = Etiqueta(data[i])
 		print 'object', i+1
