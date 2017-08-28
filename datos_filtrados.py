@@ -16,7 +16,7 @@ ver si se puede automatizar el calculo de la wea que te mando el jean (informaci
 archivo .dat se lee con open(nombre, 'r'), splitear por '\n' y se obtiene un string con id y perfil en html
 """
 
-with open('../Etiquetas-(a.valenzuelagonzlez@uandresbello.edu).csv', 'rb') as f:
+with open('data/Etiquetas-(a.valenzuelagonzlez@uandresbello.edu).csv', 'rb') as f:
 	reader = csv.reader(f)
 	data = list(reader)
 	#print data[0] #['id_perfil;clase;lugares']
@@ -59,8 +59,8 @@ with open('../Etiquetas-(a.valenzuelagonzlez@uandresbello.edu).csv', 'rb') as f:
 
 	country_count = set()
 
-	for i in range(len(etiquetas['World'])):
-		print etiquetas['World'][i].lugares
+	#for i in range(len(etiquetas['World'])):
+		#print etiquetas['World'][i].lugares
 		
 
 	print '\ndone'
