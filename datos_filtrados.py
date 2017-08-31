@@ -2,6 +2,7 @@ import csv
 import sys
 import pyperclip
 import math
+import json
 from difflib import SequenceMatcher
 from etiquetas_class import Etiqueta
 
@@ -12,16 +13,15 @@ def similar(a, b):
 """
 TODO:
 meter texto de perfil en objeto Etiqueta (para que?)
-ver si se puede automatizar el calculo de la wea que te mando el jean (informacion nosequewea)
+ver si se puede automatizar el calculo de la wea que te mando el jean (informacion mutua)
 archivo .dat se lee con open(nombre, 'r'), splitear por '\n' y se obtiene un string con id y perfil en html
 """
 
 with open('data/Etiquetas-(a.valenzuelagonzlez@uandresbello.edu).csv', 'rb') as f:
 	reader = csv.reader(f)
 	data = list(reader)
-	#print data[0] #['id_perfil;clase;lugares']
-	#aux = Etiqueta(data[154]) # 154 = world
-	del data[0]
+	
+	del data[0] #data[0] => ['id_perfil;clase;lugares']
 
 	etiquetas = {
 	'USA only': [], 
@@ -37,13 +37,14 @@ with open('data/Etiquetas-(a.valenzuelagonzlez@uandresbello.edu).csv', 'rb') as 
 		perfil = Etiqueta(element)
 		etiquetas[perfil.clase].append(perfil)
 
-	#just for the pie graph
+	#just for the pie graph, ademas de que muestra los datos de manera entendible
 	for et in etiquetas:
 		if len(string) != 1:
 			string += ','
 		print 'cantidad de elementos en '+et+':', len(etiquetas[et])
 		string += '{name:\''+et+'\', y:'+str(len(etiquetas[et]))+'}'
 	string += ']'
+	
 	pyperclip.copy(string)
 
 
@@ -55,13 +56,48 @@ with open('data/Etiquetas-(a.valenzuelagonzlez@uandresbello.edu).csv', 'rb') as 
 		#print 'entropy ', etiqueta, math.log(float(len(etiquetas[etiqueta]))/2000, 2)
 		entropy += math.log(float(len(etiquetas[etiqueta]))/2000, 2)*-1
 
-	print 'entropy:', entropy
+	print '\nentropy:', entropy
 
+
+
+
+	#paises unicos
+	#nota: deben estar etiquetados con una convencion
 	country_count = set()
+	for i in range(len(etiquetas['World'])):
+		for j in etiquetas['World'][i].lugares:
+			country_count.add(j)
+	
+	#imprimirlos
+	#for i in country_count:
+	#	print i
 
-	#for i in range(len(etiquetas['World'])):
-		#print etiquetas['World'][i].lugares
-		
+
+	#contar los paises para informacion mutua
+	ccount = {}
+
+	for i in country_count:
+		ccount[i] = 0
+
+	for i in range(len(etiquetas['World'])):
+		for j in etiquetas['World'][i].lugares:
+			ccount[j] += 1
+
+
+	#guardar archivos en txt y csv para graficas
+	ocurrencias = open('data/paises_txt.txt', 'w')
+
+	print '\n'
+	print 'Paises y numero de ocurrencias en World'
+	for i in ccount:
+		print i, ':', ccount[i]
+		ocurrencias.write(i+': '+str(ccount[i])+'\n')
+
+	ocurrencias.write('\n\njson object:\n')
+	ocurrencias.write(json.dumps(ccount))
+
+	with open('data/paises_csv.csv', 'wb') as csv_file:
+		[csv_file.write('{0};{1}\n'.format(key, value)) for key, value in ccount.items()]
 
 	print '\ndone'
 
@@ -80,3 +116,10 @@ with open('data/Etiquetas-(a.valenzuelagonzlez@uandresbello.edu).csv', 'rb') as 
 	"""
 
 sys.exit()
+
+
+"""
+entropy: https://www.youtube.com/watch?v=reNELmcKAhc
+informacion mutua: https://www.youtube.com/watch?v=DSdcoDhZAt8
+
+"""

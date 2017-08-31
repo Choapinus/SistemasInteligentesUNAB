@@ -12,15 +12,15 @@ class Etiqueta():
 			self.id_perfil = perfil[0][0].replace('"', '')
 			self.clase = perfil[0][1].replace('"', '')
 			self.lugares = [perfil[0][2].replace('"', '')]
-			if self.lugares[0].startswith(' '):
+			while self.lugares[0].startswith(' '):
 				self.lugares[0] = self.lugares[0][1:]
-			if self.lugares[0].endswith(' '):
+			while self.lugares[0].endswith(' '):
 				self.lugares[0] = self.lugares[0][:-1]
 			for iterator in perfil:
 				if type(iterator) != list:
-					if iterator.startswith(' '):
+					while iterator.startswith(' '):
 						iterator = iterator[1:]
-					if iterator.endswith(' '):
+					while iterator.endswith(' '):
 						iterator = iterator[:-1]
 					self.lugares.append(iterator.replace('"', ''))
 

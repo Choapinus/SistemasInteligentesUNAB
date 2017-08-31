@@ -42,7 +42,7 @@ id_perfil;clase;lugares
 2QHEP44RBIKM4GEIFVJPFNYEF4;USA only;Lawrence, Kansas
 2QHTGMLOFVDWPWWY7PZDW2XU34;Undetermined;none
 2QJLW4UBQD7ZXSGRT2O2RAD3UA;World;Dominican Republic, Hawaii
-2QT67EXOAU2DPLRCZCVMI3XA7Y;World;Bangladesh, New York City
+2QT67EXOAU2DPLRCZCVMI3XA7Y;World;Bangladesh, New York
 2RRFA4LJMAOJGG2U237L4VIDQM;Undetermined;none
 2SYRJFPO354VQJ2FZ4X5MOYXQM;Undetermined;none
 2T4B7KMAPSJK2L5OGFDDBWBB44;Undetermined;none
@@ -123,7 +123,7 @@ id_perfil;clase;lugares
 44BJLTEAQ5SVIHP5MPJWPSRH5E;Non-USA;Spain
 44CSIFW4XG3WQZQUMJJDVJK5AA;Undetermined;none
 44ZJ4TZRT5JVEO3RSEUPIMOU2I;Non-USA;Indiana
-45ITQZDGHIYYDD3TLIVE5244SM;USA only;New York City, New York
+45ITQZDGHIYYDD3TLIVE5244SM;USA only;New York
 45OZ7GV4AMXELD3FMFRKKCRMVE;USA only;Tennessee
 45YEJDGBPMFEIRV4DFPGG6LT3A;USA only;Chicago 
 46NVPG52UMXQJM37JABJ4V4UC4;World;Galway, Ireland, New York
@@ -368,8 +368,8 @@ id_perfil;clase;lugares
 7S5YNR7OV5RF6RL5F6ZXOCGPCM;Undetermined;none
 7SGQE5OO4XIE6DZNHP7MXS2M6A;Undetermined;none
 7SQZUNX7MO3TLZ4BRRVYMBRRIU;USA only;Ohio 
-7T72DE44CQZLGCMROL7IS7QZ5E;World;Kyoto , New York City
-7TI7UYLXJJKKJDVJMVENQ6NY5I;USA only;New York City
+7T72DE44CQZLGCMROL7IS7QZ5E;World;Kyoto , New York
+7TI7UYLXJJKKJDVJMVENQ6NY5I;USA only;New York
 7TKQWZRS4CJNRZXK3726Q7C4XE;Non-USA;Puerto Rico
 7TL3G4S2B64GDZJKTGCS6P264M;USA only;New York, Los Angeles
 7TQFYFT3VDFSIUULNJWS3OTMBY;Undetermined;none
@@ -567,7 +567,7 @@ CW76PE7J3QR6BRUFABDCJEDBGA;USA only;US
 CWRVOM5VMIFTEXZBLGB4I2YYP4;Non-USA;South Wales
 CX5ZEOUDGDDJHJ23A7RWFH3KNE;World;Canada, US
 CXHMSYQV4SH7OA47G65UTDB5KE;Undetermined;none
-CXM64S6PD6A526HC3CEIMJNN5Q;World;Ottawa, Ontario, Canada, Northernew England
+CXM64S6PD6A526HC3CEIMJNN5Q;World;Ottawa, Ontario, Canada, New England
 CYCMMIZD5PPVEIPCUYS3TTWMJI;USA only;Rhode Island
 CYWL7JCH2SO7XSCOHGY2YIAKFA;Undetermined;none
 CZPVA6XABUF6VCY2HPNEB4L45U;Non-USA;Guilin
@@ -634,7 +634,7 @@ DZUC4DJOAXYECGMGUXFFXGVEV4;Undetermined;none
 E2BYR33D5KEDW4PSF6RBCD5OMA;Non-USA;Indiana
 E2S4RILW5YEPD5IK6AMZZDD5S4;Non-USA;Canada, Ontario
 E2TNDFWNCZEJBU5B5SM56HFITE;Undetermined;none
-E36UBGXFLNDJCNNC6DLQBC27EE;World;Venezuela, Miami Beach
+E36UBGXFLNDJCNNC6DLQBC27EE;World;Venezuela, Miami
 E4ED36NFRL2KXLMTXIVOOYL3VE;Undetermined;none
 E4PGQ24WRJDXIKLE3H2Q3MOT5A;Non-USA;New Zealand
 E6JA7I5TE35YVSBKX26XEYLXIU;USA only;New Orleans, Louisiana
@@ -1278,7 +1278,7 @@ P3O2AWFIP2D7C4CWRPRFEFCXX4;Non-USA;UK
 P3YO73LXHCHXYZCYETAQY2BCCA;USA only;California
 P4ABSSGC5SH2JLMHYPWCROGCJE;Undetermined;none
 P5J6FS43JI7ZBYQXLDUNAFQVAU;USA only;Texas 
-P5JLUXZBYHP376ULNMQDHDN4UY;World;Alabama, Alaska, Arizona, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Idaho, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maine, Maryland, Massachusetts, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, New Hampshire, New Jersey, New Mexico, New York, North Carolina, North Dakota, Ohio, Oklahoma, Pennsylvania, Rhode Island, South Carolina, South Dakota, Tennessee, Texas, Utah, Vermont, Virginia, West Virginia, Wisconsin, Wyoming
+P5JLUXZBYHP376ULNMQDHDN4UY;World;Alabama, Alaska, Arizona, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Idaho, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maine, Maryland, Massachusetts, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, New Hampshire, New Jersey, New Mexico, New York, North Carolina, North Dakota, Ohio, Oklahoma, Pennsylvania, Rhode Island, South Carolina, South Dakota, Tennessee, Texas, Utah, Vermont, Virginia, Wisconsin, Wyoming
 P5W7CECUMPATCETPPM6FWJTWYI;USA only;Minnesota
 P6MBXTJLZOUEVSZEM4LOYMFT6Q;USA only;Boston, Massachusetts
 P6NXCT6ECQLS2PQJMKZYT36RNE;Undetermined;none
