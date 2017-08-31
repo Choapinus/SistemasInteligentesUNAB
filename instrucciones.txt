@@ -6,3 +6,11 @@
 - Los datos seran mostrados por pantalla y copiados al Clipboard
 - (Opcional) Los datos copiados al Clipboard pueden ser utilizados en http://jsfiddle.net/gh/get/library/pure/highcharts/highcharts/tree/master/samples/highcharts/demo/pie-basic/ en la seccion "data"
 - enjoy
+
+
+
+1.- con el csv arreglado, ahora cuenta paises
+2.- luego de contar los paises para la info mutua, guarda un txt y un csv en la carpeta data
+3.- al etiquetas_class le cambie unos condicionales por while ya que retornaba algunos paises con espacios al principio y al final
+4.- el csv contiene datos en duro. El txt lo mismo, pero al final hay un objeto json de los paises por si acaso
+5.- para que funcione con otro perfil que no sea el mio, se debe modificar el codigo => linea 20
