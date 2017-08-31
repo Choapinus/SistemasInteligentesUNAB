@@ -54,8 +54,8 @@ with open('data/Etiquetas-(a.valenzuelagonzlez@uandresbello.edu).csv', 'rb') as 
 
 	for etiqueta in etiquetas:
 		#print 'entropy ', etiqueta, math.log(float(len(etiquetas[etiqueta]))/2000, 2)
-		Pr = float(len(etiquetas[etiqueta]))/float(2000)
-		entropy += math.log(Pr)*-1*Pr
+		pr = float(len(etiquetas[etiqueta]))/float(2000)
+		entropy += math.log(pr, 2)*-1*pr
 
 	print '\nentropy:', entropy
 
