@@ -1,10 +1,16 @@
 - Tener instalado python 2.X
+
 - (Opcional) Tener instalado cmder
+
 - Guardar csv junto con el codigo python (los dos archivos .py)
+
 - Ejecutar el codigo con el siguiente comando: python datos_filtrados.py
+
 - Ingresar el nombre de su csv
 - Los datos seran mostrados por pantalla y copiados al Clipboard
+
 - (Opcional) Los datos copiados al Clipboard pueden ser utilizados en http://jsfiddle.net/gh/get/library/pure/highcharts/highcharts/tree/master/samples/highcharts/demo/pie-basic/ en la seccion "data"
+
 - enjoy
 
 

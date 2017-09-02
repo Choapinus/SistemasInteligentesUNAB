@@ -1,0 +1,272 @@
+Canada: 42
+Belguim: 1
+Santos: 1
+Karnata: 1
+Kovilpatti: 1
+Peterborough: 1
+Lithuania: 1
+Cambodia: 2
+Johannesburg: 1
+Perth: 1
+Hub Chowki: 1
+Indiana: 2
+Argentina: 1
+Bolivia: 1
+Halifax: 1
+Kiev: 1
+Saudi Arabia: 2
+Liverpool: 2
+Noida: 1
+Bromsgrove: 1
+Delhi: 7
+Morroco: 1
+Oxfordshire: 1
+Guatemala: 3
+Newcastle: 1
+Hamilton: 1
+Dorset: 1
+Spain: 5
+North England: 1
+Bedford: 2
+Dubai: 2
+Havana: 1
+Scandinavia: 1
+Holland: 1
+Canadian: 1
+Sharjah: 1
+Jharkhand: 1
+Dublin: 4
+Augusta: 1
+Stoke-on Trent: 1
+Fareham Hampshire: 1
+Cowra: 1
+Navajo: 1
+Soviet Union: 1
+Roma: 1
+Arunachal Pradesh: 1
+New Zealand: 15
+Yemen: 2
+Gloucester: 1
+Jamaica: 2
+South Ossetia: 1
+Albania: 1
+England: 48
+Macau: 1
+Keralite: 1
+Brisbane: 1
+Australia: 41
+India: 56
+Rusia: 2
+Manchester: 6
+Polish: 1
+South Korea: 1
+Shelbyville: 1
+Kotgarh: 1
+San Juan: 1
+Afghanistan: 1
+Cebu: 1
+Caribbean: 4
+Bangladesh: 4
+Africa: 6
+Guilin: 1
+Cyprus: 3
+Sinaloa: 1
+France: 2
+Alberta: 3
+Rwanda: 1
+lapu-lapu: 1
+Sydney: 6
+Kolkata: 1
+Pilani: 1
+Somerset: 1
+Norway: 3
+El Salvador: 1
+Edinburgh: 1
+Korea: 1
+Seoul: 1
+Singapore: 6
+Dumaguete: 1
+Bacolod: 1
+Camiguin: 1
+Sussex: 1
+North Wales: 1
+Saudia Arabia: 1
+Leeds: 1
+Tehran: 2
+London: 21
+Tasmania: 1
+Tamil Nadu: 1
+Ukraine: 2
+Xiamen: 1
+Nottingham: 2
+Indonesia: 3
+Bohol: 1
+Staffordshire: 2
+Sweden: 4
+Chennai: 4
+Kenya: 1
+Maui: 2
+Ensenada: 1
+Russia: 1
+New Delhi: 2
+Romania: 3
+Wolverhampton: 1
+Orano: 1
+Madrid: 1
+Sidoarjo: 1
+Essex: 1
+Malaysia: 8
+Vietnam: 4
+Quebec: 3
+UK: 66
+Hungary: 4
+Lake Atitlan: 1
+Davao: 1
+Novi Sad: 1
+New South Wales: 1
+Brazil: 4
+Buon Ma Thuot City: 1
+Netherlands: 3
+Ontario: 9
+Belfast: 1
+Lod: 1
+Turkish: 1
+Hoa Thang Ward: 1
+Kuwait: 2
+Gujarat: 2
+Scotland: 23
+Costa Rica: 2
+Mantigue: 1
+Mazatlan: 1
+Kathmandu: 1
+French: 1
+Ireland: 14
+Pakistan: 4
+Calgary: 1
+Wales: 2
+Gorbals: 1
+Perak: 1
+Czech Republic: 2
+Europe: 4
+Rochester: 1
+Indianapolis: 1
+Iran: 1
+Algeria: 1
+Shimla: 1
+New England: 2
+Khartoum: 1
+Firenze: 1
+Newfoundland: 1
+Assam: 1
+Ajax: 1
+Andhra: 1
+Puerto Rico: 4
+Queensland: 2
+Swedish: 1
+Iraq: 3
+Toronto: 2
+Honduras: 2
+Penticton: 1
+Georgia: 2
+Kilbride: 1
+Islamabad: 1
+Poland: 1
+Odense: 1
+Belgaum: 1
+Belgium: 2
+Islands of Sentosa: 1
+Cambridge: 1
+Croatia: 1
+Stockholm: 1
+Guernsey: 2
+Subic: 1
+Windermere: 1
+Derbyshire: 1
+Montreal: 6
+Croydon: 1
+Beijing: 1
+Manila: 1
+Belize: 1
+Colorado: 1
+Kosovo: 1
+German: 1
+Balochistan: 1
+Preston: 1
+Lebanon: 2
+Mongolian Stepp: 1
+New York: 1
+Birmingham: 3
+Colombia: 1
+South Wales: 2
+Taiwan: 1
+Nicaragua: 1
+Qatar: 2
+Newstead: 1
+Italy: 1
+Peru: 1
+Mumbai: 7
+Serbia: 2
+Antwerp: 1
+Nepal: 2
+Goa: 1
+Pune: 1
+Malta: 1
+Kerala: 1
+British Columbia: 1
+Vancouver: 1
+Dutch: 1
+Venezuela: 2
+Glasgow: 5
+Dulwich: 1
+Israel: 1
+Pakeha: 1
+Penrith: 1
+Great Lakes: 1
+Cities of Baguio: 1
+Iloilo: 2
+Germany: 5
+Denmark: 2
+Oxford: 2
+East Java: 1
+Philippines: 12
+Dhaka: 1
+Calamba: 1
+Samal: 1
+Surigao City: 1
+Uganda: 2
+Jakarta: 1
+Turkey: 1
+Hawaii: 1
+Melbourne: 5
+Oshawa: 1
+Latvia: 1
+Nova Scotia: 3
+Poole: 1
+Bristol: 1
+Japan: 7
+Syria: 2
+Portsmouth: 1
+Kuantan: 1
+Egypt: 4
+Flawda: 1
+Puebla Pue.: 1
+New Mexico: 1
+Mexico: 9
+Bogota: 1
+Aberdeen: 1
+Cuba: 1
+Boracay: 1
+Suffolk: 1
+Katikati: 1
+Sudanese: 1
+China: 8
+Wiltshire: 1
+Maori: 1
+Greece: 1
+Sri Lanka: 1
+Milwaukee: 1
+Copenhagen: 1
+
+
+json object:
+{"Canada": 42, "Belguim": 1, "Santos": 1, "Karnata": 1, "Kovilpatti": 1, "Peterborough": 1, "Lithuania": 1, "Cambodia": 2, "Johannesburg": 1, "Perth": 1, "Hub Chowki": 1, "Indiana": 2, "Argentina": 1, "Bolivia": 1, "Halifax": 1, "Kiev": 1, "Saudi Arabia": 2, "Liverpool": 2, "Noida": 1, "Bromsgrove": 1, "Delhi": 7, "Morroco": 1, "Oxfordshire": 1, "Guatemala": 3, "Newcastle": 1, "Hamilton": 1, "Dorset": 1, "Spain": 5, "North England": 1, "Bedford": 2, "Dubai": 2, "Havana": 1, "Scandinavia": 1, "Holland": 1, "Canadian": 1, "Sharjah": 1, "Jharkhand": 1, "Dublin": 4, "Augusta": 1, "Stoke-on Trent": 1, "Fareham Hampshire": 1, "Cowra": 1, "Navajo": 1, "Soviet Union": 1, "Roma": 1, "Arunachal Pradesh": 1, "New Zealand": 15, "Yemen": 2, "Gloucester": 1, "Jamaica": 2, "South Ossetia": 1, "Albania": 1, "England": 48, "Macau": 1, "Keralite": 1, "Brisbane": 1, "Australia": 41, "India": 56, "Rusia": 2, "Manchester": 6, "Polish": 1, "South Korea": 1, "Shelbyville": 1, "Kotgarh": 1, "San Juan": 1, "Afghanistan": 1, "Cebu": 1, "Caribbean": 4, "Bangladesh": 4, "Africa": 6, "Guilin": 1, "Cyprus": 3, "Sinaloa": 1, "France": 2, "Alberta": 3, "Rwanda": 1, "lapu-lapu": 1, "Sydney": 6, "Kolkata": 1, "Pilani": 1, "Somerset": 1, "Norway": 3, "El Salvador": 1, "Edinburgh": 1, "Korea": 1, "Seoul": 1, "Singapore": 6, "Dumaguete": 1, "Bacolod": 1, "Camiguin": 1, "Sussex": 1, "North Wales": 1, "Saudia Arabia": 1, "Leeds": 1, "Tehran": 2, "London": 21, "Tasmania": 1, "Tamil Nadu": 1, "Ukraine": 2, "Xiamen": 1, "Nottingham": 2, "Indonesia": 3, "Bohol": 1, "Staffordshire": 2, "Sweden": 4, "Chennai": 4, "Kenya": 1, "Maui": 2, "Ensenada": 1, "Russia": 1, "New Delhi": 2, "Romania": 3, "Wolverhampton": 1, "Orano": 1, "Madrid": 1, "Sidoarjo": 1, "Essex": 1, "Malaysia": 8, "Vietnam": 4, "Quebec": 3, "UK": 66, "Hungary": 4, "Lake Atitlan": 1, "Davao": 1, "Novi Sad": 1, "New South Wales": 1, "Brazil": 4, "Buon Ma Thuot City": 1, "Netherlands": 3, "Ontario": 9, "Belfast": 1, "Lod": 1, "Turkish": 1, "Hoa Thang Ward": 1, "Kuwait": 2, "Gujarat": 2, "Scotland": 23, "Costa Rica": 2, "Mantigue": 1, "Mazatlan": 1, "Kathmandu": 1, "French": 1, "Ireland": 14, "Pakistan": 4, "Calgary": 1, "Wales": 2, "Gorbals": 1, "Perak": 1, "Czech Republic": 2, "Europe": 4, "Rochester": 1, "Indianapolis": 1, "Iran": 1, "Algeria": 1, "Shimla": 1, "New England": 2, "Khartoum": 1, "Firenze": 1, "Newfoundland": 1, "Assam": 1, "Ajax": 1, "Andhra": 1, "Puerto Rico": 4, "Queensland": 2, "Swedish": 1, "Iraq": 3, "Toronto": 2, "Honduras": 2, "Penticton": 1, "Georgia": 2, "Kilbride": 1, "Islamabad": 1, "Poland": 1, "Odense": 1, "Belgaum": 1, "Belgium": 2, "Islands of Sentosa": 1, "Cambridge": 1, "Croatia": 1, "Stockholm": 1, "Guernsey": 2, "Subic": 1, "Windermere": 1, "Derbyshire": 1, "Montreal": 6, "Croydon": 1, "Beijing": 1, "Manila": 1, "Belize": 1, "Colorado": 1, "Kosovo": 1, "German": 1, "Balochistan": 1, "Preston": 1, "Lebanon": 2, "Mongolian Stepp": 1, "New York": 1, "Birmingham": 3, "Colombia": 1, "South Wales": 2, "Taiwan": 1, "Nicaragua": 1, "Qatar": 2, "Newstead": 1, "Italy": 1, "Peru": 1, "Mumbai": 7, "Serbia": 2, "Antwerp": 1, "Nepal": 2, "Goa": 1, "Pune": 1, "Malta": 1, "Kerala": 1, "British Columbia": 1, "Vancouver": 1, "Dutch": 1, "Venezuela": 2, "Glasgow": 5, "Dulwich": 1, "Israel": 1, "Pakeha": 1, "Penrith": 1, "Great Lakes": 1, "Cities of Baguio": 1, "Iloilo": 2, "Germany": 5, "Denmark": 2, "Oxford": 2, "East Java": 1, "Philippines": 12, "Dhaka": 1, "Calamba": 1, "Samal": 1, "Surigao City": 1, "Uganda": 2, "Jakarta": 1, "Turkey": 1, "Hawaii": 1, "Melbourne": 5, "Oshawa": 1, "Latvia": 1, "Nova Scotia": 3, "Poole": 1, "Bristol": 1, "Japan": 7, "Syria": 2, "Portsmouth": 1, "Kuantan": 1, "Egypt": 4, "Flawda": 1, "Puebla Pue.": 1, "New Mexico": 1, "Mexico": 9, "Bogota": 1, "Aberdeen": 1, "Cuba": 1, "Boracay": 1, "Suffolk": 1, "Katikati": 1, "Sudanese": 1, "China": 8, "Wiltshire": 1, "Maori": 1, "Greece": 1, "Sri Lanka": 1, "Milwaukee": 1, "Copenhagen": 1}

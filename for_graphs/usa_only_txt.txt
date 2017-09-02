@@ -1,0 +1,238 @@
+Albany: 2
+Albuquerque: 1
+Minnesota: 15
+Obispo: 1
+Illinois: 10
+Ontario: 2
+Oregon: 8
+Minot: 2
+San Francisco: 10
+Louisiana: 5
+Texas: 66
+Henderson: 1
+Indian Head: 1
+Maple Grove: 1
+Sacramento: 2
+Cypress: 1
+Delhi: 1
+Fremont: 1
+Connecticut: 5
+Ft. Myers: 1
+Flint: 1
+York: 1
+Berkeley: 2
+Orange County: 3
+Atlanta: 6
+Tampa: 5
+Massachusetts: 10
+Orem: 1
+Norfolk: 1
+Montrose: 1
+Miami: 9
+Badlandz: 1
+Alaska: 1
+Augusta: 1
+Mid-Missouri: 1
+Palos Verdes: 1
+Topeka: 1
+Silicon Valley: 1
+Missouri: 9
+Bahamas: 1
+New York: 52
+Chico: 1
+Colorado: 19
+Charlotte: 3
+Cincinnati: 5
+Ellensburg: 1
+New Jersey: 14
+North California: 4
+Beaumont: 1
+India: 1
+Fort Worth: 1
+Minneapolis: 2
+McAllen: 1
+Long Beach: 1
+New Orleands: 1
+London: 1
+Emerald City: 1
+Seattle: 5
+Santa Barbara: 1
+South Florida: 1
+Rochester: 1
+Transylvania: 1
+Clifty: 1
+Washington: 14
+Central Florida: 1
+Chattanooga: 1
+Denver: 3
+Worcester: 1
+North Calorina: 1
+Bremerton: 1
+Seminole: 1
+Hesperia: 1
+Orange: 1
+Maryland: 11
+Evansville: 1
+Sedona: 1
+Carolina: 5
+Arizona: 17
+Wisconsin: 22
+International Falls: 1
+Bay Area: 1
+Pittsburgh: 2
+Peoria: 3
+San Diego: 17
+The Bronx: 1
+North Wales: 1
+Montana: 6
+Californa: 1
+Tennneessee : 1
+Los Angeles: 25
+Birmingham: 2
+Ogden: 1
+Karachi: 1
+Spokane: 3
+Hopkins: 1
+San Jose: 4
+Florida: 62
+Rhode Island: 3
+Tucson: 1
+Bronx: 1
+Ohio: 28
+Buffalo: 4
+Hasintgs: 1
+Madison: 3
+Riverside County: 1
+Gaston: 1
+Boston: 6
+North Caroline: 1
+South California: 15
+Atlantic City: 1
+North Carolina: 12
+Bentonville: 1
+Orinda: 1
+Brick City: 1
+District of Columbia: 1
+Modesto: 1
+Beaver: 1
+Kingman: 1
+Maine: 5
+Norwalk: 1
+Palm Springs: 2
+Kansas: 9
+Twin Cities: 1
+Dallas: 7
+Kuwait: 1
+Oklahoma: 9
+Middletown: 1
+Richmond: 1
+Louisville: 1
+Arkansas: 14
+New Mexico: 4
+Pakistan: 1
+Hollywood: 3
+Boulder: 1
+Columbus: 4
+Breckenridge: 1
+Lawrence: 1
+Jacksonville: 2
+New England: 2
+Salem: 1
+Ann Arbor: 1
+Asheville: 1
+Vegas: 2
+Indiana: 4
+California: 97
+Memphis: 2
+Toronto: 1
+Knoxville: 1
+North Dakota: 4
+Princeton: 1
+Pennsylvania: 15
+Fresno: 2
+Orlando: 3
+Pembroke Pines: 1
+Detroit: 3
+Quakertown: 1
+Palm Beach: 1
+Charleston: 2
+Austin: 4
+Greensboro: 1
+Three Rivers: 1
+Stockton: 1
+Deltona: 1
+Beloit: 1
+Merced: 1
+Pittsburg: 1
+Lakesiide: 1
+Brooklyn: 5
+Helena: 1
+Roseville: 1
+New Orleans: 4
+Saint Joseph: 1
+Volunteer State: 1
+Cleveland: 3
+Nevada: 4
+Greenville: 2
+Chicago: 13
+Pensacola: 2
+Philadelphia: 6
+Owyhee County: 1
+Georgia: 9
+US: 48
+Danville: 1
+Washington DC: 5
+Manhattan: 1
+Idaho: 4
+Circleville: 1
+New Hampshire: 1
+Phoenix: 2
+Nashville: 2
+Utah: 6
+Virginia: 20
+Naples: 2
+Berks County: 1
+Las Vegas: 6
+Carrollton: 1
+South Carolina: 7
+Plano: 1
+Panhandle: 1
+Appleton: 1
+Waukesha: 1
+Bakersfield: 1
+Vermont: 1
+Highlands Ranch: 1
+Jersey City: 1
+San Luis: 1
+Maysville: 1
+Hawaii: 8
+Kentucky: 8
+Lexington: 1
+Nebraska: 1
+Martin: 1
+Chandler: 1
+Iowa: 3
+Alabama: 8
+Portsmouth: 1
+Pamplico: 1
+Baltimore: 3
+St. Louis: 7
+Houston: 14
+Helotes: 1
+Tallahassee: 1
+South Boston: 1
+Beverly Hills: 1
+Long Island: 3
+St. Paul: 1
+Tennessee: 19
+Myrtle Beach: 1
+louisiana: 1
+Milwaukee: 1
+Portland: 3
+Oakland: 2
+Michigan: 21
+Yukon: 1
+
+
+json object:
+{"Albany": 2, "Albuquerque": 1, "Minnesota": 15, "Obispo": 1, "Illinois": 10, "Ontario": 2, "Oregon": 8, "Minot": 2, "San Francisco": 10, "Louisiana": 5, "Texas": 66, "Henderson": 1, "Indian Head": 1, "Maple Grove": 1, "Sacramento": 2, "Cypress": 1, "Delhi": 1, "Fremont": 1, "Connecticut": 5, "Ft. Myers": 1, "Flint": 1, "York": 1, "Berkeley": 2, "Orange County": 3, "Atlanta": 6, "Tampa": 5, "Massachusetts": 10, "Orem": 1, "Norfolk": 1, "Montrose": 1, "Miami": 9, "Badlandz": 1, "Alaska": 1, "Augusta": 1, "Mid-Missouri": 1, "Palos Verdes": 1, "Topeka": 1, "Silicon Valley": 1, "Missouri": 9, "Bahamas": 1, "New York": 52, "Chico": 1, "Colorado": 19, "Charlotte": 3, "Cincinnati": 5, "Ellensburg": 1, "New Jersey": 14, "North California": 4, "Beaumont": 1, "India": 1, "Fort Worth": 1, "Minneapolis": 2, "McAllen": 1, "Long Beach": 1, "New Orleands": 1, "London": 1, "Emerald City": 1, "Seattle": 5, "Santa Barbara": 1, "South Florida": 1, "Rochester": 1, "Transylvania": 1, "Clifty": 1, "Washington": 14, "Central Florida": 1, "Chattanooga": 1, "Denver": 3, "Worcester": 1, "North Calorina": 1, "Bremerton": 1, "Seminole": 1, "Hesperia": 1, "Orange": 1, "Maryland": 11, "Evansville": 1, "Sedona": 1, "Carolina": 5, "Arizona": 17, "Wisconsin": 22, "International Falls": 1, "Bay Area": 1, "Pittsburgh": 2, "Peoria": 3, "San Diego": 17, "The Bronx": 1, "North Wales": 1, "Montana": 6, "Californa": 1, "Tennneessee ": 1, "Los Angeles": 25, "Birmingham": 2, "Ogden": 1, "Karachi": 1, "Spokane": 3, "Hopkins": 1, "San Jose": 4, "Florida": 62, "Rhode Island": 3, "Tucson": 1, "Bronx": 1, "Ohio": 28, "Buffalo": 4, "Hasintgs": 1, "Madison": 3, "Riverside County": 1, "Gaston": 1, "Boston": 6, "North Caroline": 1, "South California": 15, "Atlantic City": 1, "North Carolina": 12, "Bentonville": 1, "Orinda": 1, "Brick City": 1, "District of Columbia": 1, "Modesto": 1, "Beaver": 1, "Kingman": 1, "Maine": 5, "Norwalk": 1, "Palm Springs": 2, "Kansas": 9, "Twin Cities": 1, "Dallas": 7, "Kuwait": 1, "Oklahoma": 9, "Middletown": 1, "Richmond": 1, "Louisville": 1, "Arkansas": 14, "New Mexico": 4, "Pakistan": 1, "Hollywood": 3, "Boulder": 1, "Columbus": 4, "Breckenridge": 1, "Lawrence": 1, "Jacksonville": 2, "New England": 2, "Salem": 1, "Ann Arbor": 1, "Asheville": 1, "Vegas": 2, "Indiana": 4, "California": 97, "Memphis": 2, "Toronto": 1, "Knoxville": 1, "North Dakota": 4, "Princeton": 1, "Pennsylvania": 15, "Fresno": 2, "Orlando": 3, "Pembroke Pines": 1, "Detroit": 3, "Quakertown": 1, "Palm Beach": 1, "Charleston": 2, "Austin": 4, "Greensboro": 1, "Three Rivers": 1, "Stockton": 1, "Deltona": 1, "Beloit": 1, "Merced": 1, "Pittsburg": 1, "Lakesiide": 1, "Brooklyn": 5, "Helena": 1, "Roseville": 1, "New Orleans": 4, "Saint Joseph": 1, "Volunteer State": 1, "Cleveland": 3, "Nevada": 4, "Greenville": 2, "Chicago": 13, "Pensacola": 2, "Philadelphia": 6, "Owyhee County": 1, "Georgia": 9, "US": 48, "Danville": 1, "Washington DC": 5, "Manhattan": 1, "Idaho": 4, "Circleville": 1, "New Hampshire": 1, "Phoenix": 2, "Nashville": 2, "Utah": 6, "Virginia": 20, "Naples": 2, "Berks County": 1, "Las Vegas": 6, "Carrollton": 1, "South Carolina": 7, "Plano": 1, "Panhandle": 1, "Appleton": 1, "Waukesha": 1, "Bakersfield": 1, "Vermont": 1, "Highlands Ranch": 1, "Jersey City": 1, "San Luis": 1, "Maysville": 1, "Hawaii": 8, "Kentucky": 8, "Lexington": 1, "Nebraska": 1, "Martin": 1, "Chandler": 1, "Iowa": 3, "Alabama": 8, "Portsmouth": 1, "Pamplico": 1, "Baltimore": 3, "St. Louis": 7, "Houston": 14, "Helotes": 1, "Tallahassee": 1, "South Boston": 1, "Beverly Hills": 1, "Long Island": 3, "St. Paul": 1, "Tennessee": 19, "Myrtle Beach": 1, "louisiana": 1, "Milwaukee": 1, "Portland": 3, "Oakland": 2, "Michigan": 21, "Yukon": 1}

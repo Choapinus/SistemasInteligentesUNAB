@@ -2,22 +2,18 @@ import csv
 import sys
 import pyperclip
 import math
-import json
-from difflib import SequenceMatcher
 from etiquetas_class import Etiqueta
-
-#compara dos strings y retorna un % de similitud
-def similar(a, b):
-    return SequenceMatcher(None, a, b).ratio()
+from functions import calcularPaises, save_data
 
 """
 TODO:
-meter texto de perfil en objeto Etiqueta (para que?)
-ver si se puede automatizar el calculo de la wea que te mando el jean (informacion mutua)
+meter texto de perfil en objeto Etiqueta (para la tarea 2 piden contar palabras)
 archivo .dat se lee con open(nombre, 'r'), splitear por '\n' y se obtiene un string con id y perfil en html
+
+solo resta sacar la info mutua
 """
 
-with open('data/Etiquetas-(a.valenzuelagonzlez@uandresbello.edu).csv', 'rb') as f:
+with open('to_read/Etiquetas-(a.valenzuelagonzlez@uandresbello.edu).csv', 'rb') as f:
 	reader = csv.reader(f)
 	data = list(reader)
 	
@@ -45,7 +41,7 @@ with open('data/Etiquetas-(a.valenzuelagonzlez@uandresbello.edu).csv', 'rb') as 
 		string += '{name:\''+et+'\', y:'+str(len(etiquetas[et]))+'}'
 	string += ']'
 	
-	pyperclip.copy(string)
+	#pyperclip.copy(string)
 
 
 	#entropy calculation
@@ -54,67 +50,31 @@ with open('data/Etiquetas-(a.valenzuelagonzlez@uandresbello.edu).csv', 'rb') as 
 
 	for etiqueta in etiquetas:
 		#print 'entropy ', etiqueta, math.log(float(len(etiquetas[etiqueta]))/2000, 2)
-		pr = float(len(etiquetas[etiqueta]))/float(2000)
-		entropy += math.log(pr, 2)*-1*pr
+		pr = float(len(etiquetas[etiqueta]))/2000.0
+		entropy += pr*math.log(pr, 2)*-1
 
 	print '\nentropy:', entropy
 
 
 
+	paises_calculados = []
 
-	#paises unicos
-	#nota: deben estar etiquetados con una convencion
-	country_count = set()
-	for i in range(len(etiquetas['World'])):
-		for j in etiquetas['World'][i].lugares:
-			country_count.add(j)
-	
-	#imprimirlos
-	#for i in country_count:
-	#	print i
-
-
-	#contar los paises para informacion mutua
-	ccount = {}
-
-	for i in country_count:
-		ccount[i] = 0
-
-	for i in range(len(etiquetas['World'])):
-		for j in etiquetas['World'][i].lugares:
-			ccount[j] += 1
-
+	paises_calculados.append(calcularPaises('World', etiquetas['World'], etiquetas))
+	paises_calculados.append(calcularPaises('USA only', etiquetas['USA only'], etiquetas))
+	paises_calculados.append(calcularPaises('Non-USA', etiquetas['Non-USA'], etiquetas))
 
 	#guardar archivos en txt y csv para graficas
-	ocurrencias = open('data/paises_txt.txt', 'w')
+	save_data(paises_calculados)
 
-	print '\n'
-	print 'Paises y numero de ocurrencias en World'
-	for i in ccount:
-		print i, ':', ccount[i]
-		ocurrencias.write(i+': '+str(ccount[i])+'\n')
-
-	ocurrencias.write('\n\njson object:\n')
-	ocurrencias.write(json.dumps(ccount))
-
-	with open('data/paises_csv.csv', 'wb') as csv_file:
-		[csv_file.write('{0};{1}\n'.format(key, value)) for key, value in ccount.items()]
-
-	print '\ndone'
+	print '\nall done'
+	
+	#calcular info mutua	
 
 
 
-	"""
-	#show cute data
-	for i in range(100):
-		print 'perfil:', data[i]
-		aux = Etiqueta(data[i])
-		print 'object', i+1
-		print 'id_perfil:', aux.id_perfil+'.'
-		print 'clase:', aux.clase+'.'
-		print 'lugares:', str(aux.lugares)+'.'
-		print '\n'
-	"""
+	
+
+
 
 sys.exit()
 
@@ -122,5 +82,9 @@ sys.exit()
 """
 entropy: https://www.youtube.com/watch?v=reNELmcKAhc
 informacion mutua: https://www.youtube.com/watch?v=DSdcoDhZAt8
+
+para la informacion mutua:
+sacar paises no repetidos de cada etiqueta excepto undetermined
+luego, calcular cuantos paises de cada uno hay en cada etiqueta
 
 """
