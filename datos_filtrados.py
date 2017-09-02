@@ -1,9 +1,7 @@
-import csv
-import sys
-import pyperclip
-import math
+import csv, sys, pyperclip, math
 from etiquetas_class import Etiqueta
-from functions import calcularPaises, save_data
+from functions import calcularPaises, save_data, entropia_paises
+
 
 """
 TODO:
@@ -37,7 +35,9 @@ with open('to_read/Etiquetas-(a.valenzuelagonzlez@uandresbello.edu).csv', 'rb') 
 	for et in etiquetas:
 		if len(string) != 1:
 			string += ','
-		print 'cantidad de elementos en '+et+':', len(etiquetas[et])
+		print 'Cantidad en '+et+':', len(etiquetas[et])
+		print 'Probabilidad de '+et+':', float(len(etiquetas[et]))/2000.0
+		print
 		string += '{name:\''+et+'\', y:'+str(len(etiquetas[et]))+'}'
 	string += ']'
 	
@@ -45,15 +45,16 @@ with open('to_read/Etiquetas-(a.valenzuelagonzlez@uandresbello.edu).csv', 'rb') 
 
 
 	#entropy calculation
-
 	entropy = 0
 
 	for etiqueta in etiquetas:
 		#print 'entropy ', etiqueta, math.log(float(len(etiquetas[etiqueta]))/2000, 2)
 		pr = float(len(etiquetas[etiqueta]))/2000.0
 		entropy += pr*math.log(pr, 2)*-1
+		print 'Entropia de '+etiqueta+':', pr*math.log(pr, 2)*-1
 
 	print '\nentropy:', entropy
+	print
 
 
 
@@ -66,10 +67,23 @@ with open('to_read/Etiquetas-(a.valenzuelagonzlez@uandresbello.edu).csv', 'rb') 
 	#guardar archivos en txt y csv para graficas
 	save_data(paises_calculados)
 
+
+	#entropias en terminos de ubicacion geografica
+	#print paises_calculados[0]
+	
+	entropia_paises(etiqueta='World', dict_paises=paises_calculados[0])
+	entropia_paises(etiqueta='USA only', dict_paises=paises_calculados[1])
+	entropia_paises(etiqueta='Non-USA', dict_paises=paises_calculados[2])
+	
+	#print entropia_paises(dict_paises=paises_calculados[0])
+
+	
+
+
+
 	print '\nall done'
 	
 	#calcular info mutua	
-
 
 
 	

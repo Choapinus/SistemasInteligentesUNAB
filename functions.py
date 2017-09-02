@@ -1,4 +1,4 @@
-import json
+import json, math
 
 #funcion para contar ocurrencia de cada pais
 #nota: deben estar etiquetados con una convencion 
@@ -68,3 +68,17 @@ def save_data(lista):
 	ocurrencias.write('\n\njson object:\n')
 	ocurrencias.write(json.dumps(lista[2]))
 	ocurrencias.close()
+
+def entropia_paises(etiqueta=None, dict_paises={}):
+	total_ocurrencias_paises = sum(dict_paises.values())
+	entropiaTotal_paises = 0
+	
+	for pais in dict_paises.keys():
+		pr = float(dict_paises[pais])/float(total_ocurrencias_paises)
+		entropiaTotal_paises += pr*math.log(pr, 2)*-1
+	if etiqueta is not None:
+		print 'entropiaTotal_paises de '+etiqueta+':', entropiaTotal_paises
+	else:
+		return entropiaTotal_paises
+
+

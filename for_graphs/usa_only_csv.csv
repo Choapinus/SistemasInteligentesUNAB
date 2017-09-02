@@ -4,10 +4,10 @@ Minnesota;15
 Obispo;1
 Illinois;10
 Ontario;2
-Oregon;8
+North Wales;1
 Minot;2
 San Francisco;10
-Louisiana;5
+Louisiana;6
 Texas;66
 Henderson;1
 Indian Head;1
@@ -24,9 +24,8 @@ Berkeley;2
 Orange County;3
 Atlanta;6
 Tampa;5
-Massachusetts;10
 Orem;1
-Norfolk;1
+Tennessee ;1
 Montrose;1
 Miami;9
 Badlandz;1
@@ -52,7 +51,6 @@ Fort Worth;1
 Minneapolis;2
 McAllen;1
 Long Beach;1
-New Orleands;1
 London;1
 Emerald City;1
 Seattle;5
@@ -61,12 +59,11 @@ South Florida;1
 Rochester;1
 Transylvania;1
 Clifty;1
-Washington;14
+Washington;19
 Central Florida;1
 Chattanooga;1
 Denver;3
-Worcester;1
-North Calorina;1
+Lakesiide;1
 Bremerton;1
 Seminole;1
 Hesperia;1
@@ -79,14 +76,13 @@ Arizona;17
 Wisconsin;22
 International Falls;1
 Bay Area;1
-Pittsburgh;2
+Pittsburgh;3
 Peoria;3
 San Diego;17
 The Bronx;1
-North Wales;1
+Oregon;8
 Montana;6
-Californa;1
-Tennneessee ;1
+Massachusetts;10
 Los Angeles;25
 Birmingham;2
 Ogden;1
@@ -105,10 +101,9 @@ Madison;3
 Riverside County;1
 Gaston;1
 Boston;6
-North Caroline;1
 South California;15
 Atlantic City;1
-North Carolina;12
+North Carolina;14
 Bentonville;1
 Orinda;1
 Brick City;1
@@ -142,7 +137,7 @@ Ann Arbor;1
 Asheville;1
 Vegas;2
 Indiana;4
-California;97
+California;98
 Memphis;2
 Toronto;1
 Knoxville;1
@@ -163,12 +158,12 @@ Stockton;1
 Deltona;1
 Beloit;1
 Merced;1
-Pittsburg;1
-Lakesiide;1
+Carrollton;1
+Worcester;1
 Brooklyn;5
 Helena;1
 Roseville;1
-New Orleans;4
+New Orleans;5
 Saint Joseph;1
 Volunteer State;1
 Cleveland;3
@@ -181,11 +176,10 @@ Owyhee County;1
 Georgia;9
 US;48
 Danville;1
-Washington DC;5
+Norfolk;1
 Manhattan;1
 Idaho;4
 Circleville;1
-New Hampshire;1
 Phoenix;2
 Nashville;2
 Utah;6
@@ -193,7 +187,7 @@ Virginia;20
 Naples;2
 Berks County;1
 Las Vegas;6
-Carrollton;1
+New Hampshire;1
 South Carolina;7
 Plano;1
 Panhandle;1
@@ -204,7 +198,6 @@ Vermont;1
 Highlands Ranch;1
 Jersey City;1
 San Luis;1
-Maysville;1
 Hawaii;8
 Kentucky;8
 Lexington;1
@@ -226,7 +219,7 @@ Long Island;3
 St. Paul;1
 Tennessee;19
 Myrtle Beach;1
-louisiana;1
+Maysville;1
 Milwaukee;1
 Portland;3
 Oakland;2
