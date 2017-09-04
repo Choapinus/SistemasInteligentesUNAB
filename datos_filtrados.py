@@ -9,6 +9,7 @@ meter texto de perfil en objeto Etiqueta (para la tarea 2 piden contar palabras)
 archivo .dat se lee con open(nombre, 'r'), splitear por '\n' y se obtiene un string con id y perfil en html
 
 solo resta sacar la info mutua
+pd: sacar el pyperclip o instalarlo por codigo para que no tire error
 """
 
 with open('to_read/Etiquetas-(a.valenzuelagonzlez@uandresbello.edu).csv', 'rb') as f:
