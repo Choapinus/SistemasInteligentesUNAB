@@ -1,0 +1,30 @@
+
+
+* si no dice que vive o vivio en X ciudad, indeterminado
+* si dice que esta estudiando en X ciudad, vive ahi
+* si dice que se lo puede encontrar cerca de cierto lugar de X ciudad, vive ahi
+* si usa solo citas, indeterminado
+* si solo dice que vive en USA pero no en que parte, es indeterminado
+* si dice que nacio en X sector y no dice que vive en otra parte, vive ahi
+* si dice que trabaja en X parte, pero no dice donde vive, indeterminado
+* si dice "i'm from X" y no da otra ubicacion, vive ahi
+* si dice que sirvio al ejercito de USA pero no dice donde vive actualmente, USA
+* paises que tambien son estados, indeterminado
+* si dice solo carolina, indeterminado (carolina del norte o sur?, thats why)
+
+
+
+* si el texto es muy ambiguo pero tiene la estructura:
+-  Musical Theatre. Irish. London. 17. food :)
+   
+	se tomara como lugar de nacimiento, lugar de residencia
+
+* si el texto es ambiguo (nsw near sydney), indeterminado
+* america is not usa
+
+
+
+
+equivocaciones en perfiles:
+
+337, 348, 472, 486, 488, 501, 521, 732, 919, 1030, 1154, 1306, 1506, 1865, 1893, 1941
