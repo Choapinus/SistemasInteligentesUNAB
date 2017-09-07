@@ -6,20 +6,23 @@ if __name__ == '__main__':
 		if os.system('python -m pip freeze | grep click') == 1:
 			os.system('python -m pip install click')
 			print 'click module installed'
-		from click import progressbar
 
 		if os.system('python -m pip freeze | grep bs4') == 1:
 			os.system('python -m pip install bs4')
 			print 'bs4 module installed'
+			
+		from click import progressbar
+
 	else:
 		if os.system('C:/Python27/python -m pip freeze | grep click') == 1:
 			os.system('C:/Python27/python -m pip install click')
 			print 'click module installed'
-		from click import progressbar
 
 		if os.system('C:/Python27/python -m pip freeze | grep bs4') == 1:
 			os.system('C:/Python27/python -m pip install bs4')
 			print 'bs4 module installed'
+
+		from click import progressbar
 
 	from filters import get_etiquetas, only_alpha, get_words
 	from etiquetas_class import Vector
