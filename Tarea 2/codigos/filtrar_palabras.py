@@ -1,6 +1,5 @@
 from bs4 import BeautifulSoup
 from datos_filtrados import clasificar
-from etiquetas_class import Perfil
 
 stopwords = open('data/stopwords.txt', 'r')
 stopwords = stopwords.readlines()
@@ -10,23 +9,13 @@ for i in range(len(stopwords)):
 
 stopwords = set(stopwords)
 
-perfiles = open('data/Perfiles-(a.valenzuelagonzlez@uandresbello.edu).dat', 'r')
-perfiles = perfiles.readlines()
+#etiquetas = clasificar(_csv='nombre.csv', _dat='nombre.dat')
 
-#clean text from html tags
-for i in range(len(perfiles)):
-	perfiles[i] = BeautifulSoup(perfiles[i], "html.parser").get_text()
-
-
-#lista de objetos Perfiles
-perfiles_texto = []
-for i in perfiles:
-	perfiles_texto.append(Perfil(i))
-
-etiquetas = clasificar(lista_textos_perfiles=perfiles_texto)
+etiquetas = clasificar()
 
 #se pudo ctm!!
-print etiquetas[etiquetas.keys()[0]][1].id_perfil, etiquetas[etiquetas.keys()[0]][1].texto
+print etiquetas[etiquetas.keys()[1]][0].lugares
+
 
 
 
