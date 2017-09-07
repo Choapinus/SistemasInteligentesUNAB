@@ -18,9 +18,11 @@ Opcional:
 	  el codigo esta pre-configurado para que funcione con mis datos
 
 	- Puede borrar mis archivos .csv y .dat sin temor a que algo explote, de ser asi, siga bien las instrucciones
+	- A modo comparativo, desde mis perfiles se cuentan 16.374 palabras distintas
 
 
 Importante:
+    - Considerar que el codigo es case sensitive
 	- Para un optimo funcionamiento, debe tener los perfiles etiquetados bajo una estandarizacion.
 	  De lo contrario, el codigo puede no funcionar correctamente.
 	  ejemplos:
@@ -48,26 +50,26 @@ Modo de Uso:
 	  ejemplo: _csv='Etiquetas-(a.valenzuelagonzlez@uandresbello.edu).csv', _dat='Perfiles-(a.valenzuelagonzlez@uandresbello.edu).dat'
 	  OJO, usar comillas simples
 	
-	- Abra su consola favorita (*ejem*Cmder*ejem*), cambie de directorio y situese en la carpeta "codigos"
+	- Abra su consola favorita (*ejem*Cmder*ejem*), cambie de directorio y situese en la carpeta "/codigos"
 	  Por ejemplo:
 	  	ej1.- cd Desktop/carpeta_cualquiera/codigos
 	  	ej2.- cd Downloads/carpeta_descomprimida/codigos
-	  Su directorio eberia mostrar algo similar a "C:/Users/NombreUsuario/Downloads/codigos"
+	  Su directorio deberia mostrar algo similar a "C:/Users/NombreUsuario/Downloads/codigos"
 
 	- Si usted no quiere/no sabe/no pudo configurar sus variables de entorno, pero tiene instalado python en donde debe,
-	  ejecute el siguiente codigo sin comillas en el Cmder o en el cmd (consola por defecto de windows)
+	  ejecute el siguiente codigo sin comillas en el Cmder o en el cmd (consola por defecto de windows, no recomendable)
 	  	"C:/Python27/python main.py"
 
 	- Si usted tiene Python 2.7 instalado y con sus variables de entorno configuradas, ejecute
-	  el siguiente codigo sin comillas en el Cmder o en el cmd (consola por defecto de windows)
+	  el siguiente codigo sin comillas en el Cmder o en el cmd (consola por defecto de windows, no recomendable)
 	  	"python main.py"
 
 	- Sirvase un tesito, el proceso puede tardar unos segundos dependiendo de su maquina (tiempo minimo: 1 min)
-	- Luego de haber terminado, el programa creara un archivo llamado "vectores.txt" en la carpeta /data
+	- Luego de haber terminado, el programa creara un archivo llamado "vectores.txt" en la carpeta "/data"
 	- Mencionado archivo contiene los vectores ordenados de manera ascendente como pide el informe
 	- Si su archivo de vectores no contiene 2000 lineas, preocupese (2001 debido al ultimo \n)
 	- Cross-validation estara proximamente
-	- Ante eventualidades, consultas, preguntas, acotaciones o depositos bancarios, comuniquese conmigo por interno,
+	- Ante eventualidades, consultas, dudas, preguntas, acotaciones o depositos bancarios, comuniquese conmigo por interno,
 	  me detalla el error que le aparece con sus palabras y luego una captura de pantalla, yo no muerdo
 
 
