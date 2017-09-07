@@ -1,0 +1,78 @@
+Si usted ocupa Linux, siga las instrucciones sin preocuparse por el disco local, las variables de entorno ni por el Cmder
+Si usted ocupa Windows, siga lea bien las instrucciones
+
+Obligatorio:
+	- Tener instalado Python 2.7
+	- No, no funciona para versiones posteriores
+	- Tenerlo instalado en el disco local C: (de no ser asi, se advierte que el codigo puede no funcionar)
+	- Guarde su archivo .csv y su archivo .dat en la carpeta "data" ubicada en "/codigos/data" (no modifique los nombres de sus archivos)
+	- Si usted tiene una lista personal de stopwords y quiere implementarla, se dejaran instrucciones al final de este archivo
+	- Prohibido mover o borrar algun archivo .py, recuerde que Python es un lenguaje interpretado 
+	  y necesita de estos archivos para vivir
+
+
+Opcional:
+	- Tener configuradas las variables de entorno respecto a python
+	- Instalar Cmder (se recomienda fuertemente el uso de Cmder debido a que el cmd de windows no posee el comando grep)
+	- Puede ejecutar el programa a modo de ejemplo antes de editar cualquier cosa, 
+	  el codigo esta pre-configurado para que funcione con mis datos
+
+	- Puede borrar mis archivos .csv y .dat sin temor a que algo explote, de ser asi, siga bien las instrucciones
+
+
+Importante:
+	- Para un optimo funcionamiento, debe tener los perfiles etiquetados bajo una estandarizacion.
+	  De lo contrario, el codigo puede no funcionar correctamente.
+	  ejemplos:
+	  	tx no es lo mismo que Texas (o son todos tx o son todos Texas, pero no ambas)
+	  	england no es lo mismo que England
+	  	usa no es lo mismo que USA y este no es lo mismo que US
+	  	Londno no es lo mismo que London
+	  	"NewYork" no es lo mismo que "New York City" y este no es lo mismo que "New York"
+	  	Evite uso de acentos, eñes y caracteres non-ascii en los paises, el codigo se marea
+	  	Cuide su ortografia, el codigo discrimina
+	  	Mi csv esta a disposicion suya para tenerlo de ejemplo
+	- No modifique el codigo a no ser que se le especifique o sepa que es lo que esta haciendo, me costo hacerlo :c
+	- Si usted borra el archivo stopwords.txt, el codigo puede no funcionar (creame, no lo hara)
+	- Si usted borra mis archivos .csv y .dat y no sigue las instrucciones, el codigo no funcionara correctamente
+	- Tenga en cuenta que los comentarios en Python inician con un #
+
+
+Modo de Uso:
+	- Si no tiene sus archivos csv y dat en la carpeta "data", usted no leyo nada (linea 8)
+	- Abra con algun editor de texto (sublime text de preferencia) el archivo "main.py"
+	- Con cuidado de no borrar los espacios (fun fact: python identa con espacios y/o tabuladores. Si borra un espacio, presione Ctrl+Z)
+	  descomente (borre el #) de la linea 27, comente (añada un # al principio de) la linea 29
+
+	- Cambie los valores _csv='nombre.csv' y _dat='nombre.dat' por los nombres de sus respectivos archivos y guardar cambios (Ctrl+S)
+	  ejemplo: _csv='Etiquetas-(a.valenzuelagonzlez@uandresbello.edu).csv', _dat='Perfiles-(a.valenzuelagonzlez@uandresbello.edu).dat'
+	  OJO, usar comillas simples
+	
+	- Abra su consola favorita (*ejem*Cmder*ejem*), cambie de directorio y situese en la carpeta "codigos"
+	  Por ejemplo:
+	  	ej1.- cd Desktop/carpeta_cualquiera/codigos
+	  	ej2.- cd Downloads/carpeta_descomprimida/codigos
+	  Su directorio eberia mostrar algo similar a "C:/Users/NombreUsuario/Downloads/codigos"
+
+	- Si usted no quiere/no sabe/no pudo configurar sus variables de entorno, pero tiene instalado python en donde debe,
+	  ejecute el siguiente codigo sin comillas en el Cmder o en el cmd (consola por defecto de windows)
+	  	"C:/Python27/python main.py"
+
+	- Si usted tiene Python 2.7 instalado y con sus variables de entorno configuradas, ejecute
+	  el siguiente codigo sin comillas en el Cmder o en el cmd (consola por defecto de windows)
+	  	"python main.py"
+
+	- Sirvase un tesito, el proceso puede tardar unos segundos dependiendo de su maquina (tiempo minimo: 1 min)
+	- Luego de haber terminado, el programa creara un archivo llamado "vectores.txt" en la carpeta /data
+	- Mencionado archivo contiene los vectores ordenados de manera ascendente como pide el informe
+	- Si su archivo de vectores no contiene 2000 lineas, preocupese (2001 debido al ultimo \n)
+	- Cross-validation estara proximamente
+	- Ante eventualidades, consultas, preguntas, acotaciones o depositos bancarios, comuniquese conmigo por interno,
+	  me detalla el error que le aparece con sus palabras y luego una captura de pantalla, yo no muerdo
+
+
+
+
+Instrucciones Stopwords:
+	- Copie y pegue sus stopwords (separadas cada una por un enter) en el archivo "stopwords.txt"
+	  Si ve que se repiten no se preocupe, el codigo es capaz de omitir estas repeticiones
