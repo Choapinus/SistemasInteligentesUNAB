@@ -1,5 +1,5 @@
 Si usted ocupa Linux, siga las instrucciones sin preocuparse por el disco local, las variables de entorno ni por el Cmder
-Si usted ocupa Windows, siga lea bien las instrucciones
+Si usted ocupa Windows, siga y lea bien las instrucciones
 
 Obligatorio:
 	- Tener instalado Python 2.7
