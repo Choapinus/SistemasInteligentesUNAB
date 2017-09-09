@@ -44,10 +44,10 @@ Modo de Uso:
 	- Si no tiene sus archivos csv y dat en la carpeta "data", usted no leyo nada (linea 8)
 	- Abra con algun editor de texto (sublime text de preferencia) el archivo "main.py"
 	- Con cuidado de no borrar los espacios (fun fact: python identa con espacios y/o tabuladores. Si borra un espacio, presione Ctrl+Z)
-	  descomente (borre el #) de la linea 27, comente (añada un # al principio de) la linea 29
+	  descomente (borre el #) de la linea 46, comente (anada un # al principio de) la linea 48
 
-	- Cambie los valores _csv='nombre.csv' y _dat='nombre.dat' por los nombres de sus respectivos archivos y guardar cambios (Ctrl+S)
-	  ejemplo: _csv='Etiquetas-(a.valenzuelagonzlez@uandresbello.edu).csv', _dat='Perfiles-(a.valenzuelagonzlez@uandresbello.edu).dat'
+	- Cambie los valores _csv='data/nombre.csv' y _dat='data/nombre.dat' por los nombres de sus respectivos archivos y guardar cambios (Ctrl+S)
+	  ejemplo: _csv='data/Etiquetas-(a.valenzuelagonzlez@uandresbello.edu).csv', _dat='data/Perfiles-(a.valenzuelagonzlez@uandresbello.edu).dat'
 	  OJO, usar comillas simples
 	
 	- Abra su consola favorita (*ejem*Cmder*ejem*), cambie de directorio y situese en la carpeta "/codigos"

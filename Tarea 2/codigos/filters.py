@@ -1,5 +1,5 @@
-from bs4 import BeautifulSoup
 import re
+from bs4 import BeautifulSoup
 from etiquetas_class import Etiqueta, Perfil
 
 
