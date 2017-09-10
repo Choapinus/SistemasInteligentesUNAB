@@ -1,48 +1,15 @@
-import os
-import platform
-
 if __name__ == '__main__':
 
-	if 'Win' in platform.system():
-		
-		if 'Python27' in os.getenv('PATH'):
-			if os.system('python -m pip freeze | finstr "click"') == 1:
-				os.system('python -m pip install click')
-				print 'click module installed'
+	from filters import install_req
 
-			if os.system('python -m pip freeze | findstr "bs4"') == 1:
-				os.system('python -m pip install bs4')
-				print 'bs4 module installed'
-				
-			from click import progressbar
+	install_req()
 
-		else:
-			if os.system('C:/Python27/python -m pip freeze | findstr "click"') == 1:
-				os.system('C:/Python27/python -m pip install click')
-				print 'click module installed'
-
-			if os.system('C:/Python27/python -m pip freeze | findstr "bs4"') == 1:
-				os.system('C:/Python27/python -m pip install bs4')
-				print 'bs4 module installed'
-
-			from click import progressbar
-	else:
-
-		if os.system('python -m pip freeze | grep click') == 1:
-			os.system('python -m pip install click')
-			print 'click module installed'
-
-		if os.system('python -m pip freeze | grep bs4') == 1:
-			os.system('python -m pip install bs4')
-			print 'bs4 module installed'
-			
-		from click import progressbar
-
-
-
-	from filters import get_etiquetas, only_alpha, get_words
+	from click import progressbar
 	from etiquetas_class import Vector
+	from filters import get_etiquetas, only_alpha, get_words, cross_validation
 		
+
+
 	#etiquetas = get_etiquetas(_csv='data/nombre.csv', _dat='data/nombre.dat') #para el que quiera editar
 
 	etiquetas = get_etiquetas() #se obtienen las etiquetas
@@ -69,7 +36,11 @@ if __name__ == '__main__':
 		arch.write(vector.vector)
 		arch.write('\n')
 	arch.close()
-	print 'vectores guardados en la carpeta data, bai~'
+	print 'vectores guardados en la carpeta data'
+
+	cross_validation()
+	print 'cross-validation realizado en la carpeta /training'
+
 
 	
 	exit()
