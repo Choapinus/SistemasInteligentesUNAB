@@ -89,16 +89,17 @@ def get_words(etiquetas):
 def cross_validation(data='data/vectores.txt'):
 	data = open(data, 'r')
 	data = data.readlines()
-	S_01 = open('training/S_01.txt', 'w')	
-	S_02 = open('training/S_02.txt', 'w')
-	S_03 = open('training/S_03.txt', 'w')
-	S_04 = open('training/S_04.txt', 'w')
-	S_05 = open('training/S_05.txt', 'w')
-	S_06 = open('training/S_06.txt', 'w')
-	S_07 = open('training/S_07.txt', 'w')
-	S_08 = open('training/S_08.txt', 'w')
-	S_09 = open('training/S_09.txt', 'w')
-	S_10 = open('training/S_10.txt', 'w')
+	#Los S (splits del dataset)
+	S_01 = open('training/S_train/S_01.dat', 'w')	
+	S_02 = open('training/S_train/S_02.dat', 'w')
+	S_03 = open('training/S_train/S_03.dat', 'w')
+	S_04 = open('training/S_train/S_04.dat', 'w')
+	S_05 = open('training/S_train/S_05.dat', 'w')
+	S_06 = open('training/S_train/S_06.dat', 'w')
+	S_07 = open('training/S_train/S_07.dat', 'w')
+	S_08 = open('training/S_train/S_08.dat', 'w')
+	S_09 = open('training/S_train/S_09.dat', 'w')
+	S_10 = open('training/S_train/S_10.dat', 'w')
 
 	for i in data[:200]:
 		S_01.write(i)
@@ -130,6 +131,75 @@ def cross_validation(data='data/vectores.txt'):
 	for i in data[1801:2000]:
 		S_10.write(i)
 	S_10.close()
+
+	#Los E (sets de entrenamiento)
+	E_01 = open('training/E_train/E_01.dat', 'w')	
+	E_02 = open('training/E_train/E_02.dat', 'w')
+	E_03 = open('training/E_train/E_03.dat', 'w')
+	E_04 = open('training/E_train/E_04.dat', 'w')
+	E_05 = open('training/E_train/E_05.dat', 'w')
+	E_06 = open('training/E_train/E_06.dat', 'w')
+	E_07 = open('training/E_train/E_07.dat', 'w')
+	E_08 = open('training/E_train/E_08.dat', 'w')
+	E_09 = open('training/E_train/E_09.dat', 'w')
+	E_10 = open('training/E_train/E_10.dat', 'w')
+
+
+	for i in data[200:]:
+		E_01.write(i)
+	E_01.close()
+	
+	for i in data[:200]:
+		E_02.write(i)
+	for i in data[400:]:
+		E_02.write(i)
+	E_02.close()
+
+	for i in data[:400]:
+		E_03.write(i)
+	for i in data[600:]:
+		E_03.write(i)
+	E_03.close()
+
+	for i in data[:600]:
+		E_04.write(i)
+	for i in data[800:]:
+		E_04.write(i)
+	E_04.close()
+	
+	for i in data[:800]:
+		E_05.write(i)
+	for i in data[1000:]:
+		E_05.write(i)
+	E_05.close()
+	
+	for i in data[:1000]:
+		E_06.write(i)
+	for i in data[1200:]:
+		E_06.write(i)
+	E_06.close()
+	
+	for i in data[:1200]:
+		E_07.write(i)
+	for i in data[1400:]:
+		E_07.write(i)
+	E_07.close()
+	
+	for i in data[:1400]:
+		E_08.write(i)
+	for i in data[1600:]:
+		E_08.write(i)
+	E_08.close()
+	
+	for i in data[:1600]:
+		E_09.write(i)
+	for i in data[1800:]:
+		E_09.write(i)
+	E_09.close()
+	
+	for i in data[:1800]:
+		E_10.write(i)
+	E_10.close()
 
 
 
