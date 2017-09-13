@@ -2,7 +2,7 @@ Si usted ocupa Linux, siga las instrucciones sin preocuparse por el disco local,
 Si usted ocupa Windows, siga y lea bien las instrucciones
 
 Obligatorio:
-	- Tener instalado Python 2.7
+	- Tener instalado Python 2.7.13
 	- No, no funciona para versiones posteriores
 	- Tenerlo instalado en el disco local C: (de no ser asi, se advierte que el codigo puede no funcionar)
 	- Guarde su archivo .csv y su archivo .dat en la carpeta "data" ubicada en "/codigos/data" (no modifique los nombres de sus archivos)

@@ -20,6 +20,7 @@ if __name__ == '__main__':
 	#print 'predictions', predictions[0][0]
 
 	vectores = []
+	mrr = 0.0
 
 	for i in range(len(s_train)):
 		vectores.append(Vector(s_train[i], predictions[i]))
@@ -28,17 +29,41 @@ if __name__ == '__main__':
 		print 'iteracion '+str(i+1)
 		print 'aciertos: '+str(vectores[i].correctos)
 		print 'errores: '+str(vectores[i].incorrectos)
-		print 'mmr: '+str(vectores[i].mrr)
+		print 'mrr: '+str(vectores[i].mrr/200.0)
+		mrr += vectores[i].mrr
 		print 'average loss: '+str(float(vectores[i].incorrectos)/200.0*100.0) #200 por ser de 200 elementos los splits
 		print 'accuracy: '+str(vectores[i].correctos/200.0)
+		print 'cant de non-usa: '+str(vectores[i].ocurrencias['Non-USA'])
+		print 'cant de undet: '+str(vectores[i].ocurrencias['Undetermined'])
+		print 'cant de world: '+str(vectores[i].ocurrencias['World'])
+		print 'cant de usa only: '+str(vectores[i].ocurrencias['USA only'])
 		print
+	print 'mrr general: '+str(mrr/2000.0)
 
 
+	print
+	print 'para la curva roc'
 
+	usa_only = 0
+	non_usa = 0
+	undet = 0
+	world = 0
+
+	for vec in vectores:
+		usa_only += vec.ocurrencias['USA only']
+		non_usa += vec.ocurrencias['Non-USA']
+		undet += vec.ocurrencias['Undetermined']
+		world += vec.ocurrencias['World']
+	print 'usa_only: '+str(usa_only)
+	print 'non_usa: '+str(non_usa)
+	print 'under: '+str(undet)
+	print 'world: '+str(world)
 
 	
 	"""
-	* corregir y calcular mmr
+	* corregir y calcular mrr (mrr) es por clase??
+
+	* contar cuantas ocurrencias hubieron de cada etiqueta en las predicciones
 	* Por convencion, la clase que uno le interesa identificar es la positiva, y todo el resto se le llama negativo.
 	* Accuracy: El ratio de casos correctamente clasificados versus el numero total de casos de prueba.
 

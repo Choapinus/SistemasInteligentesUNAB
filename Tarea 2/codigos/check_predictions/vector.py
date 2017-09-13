@@ -3,6 +3,12 @@ class Vector():
 		self.correctos = 0
 		self.incorrectos = 0
 		self.mrr = 0.0
+		self.ocurrencias = {
+			'Undetermined': 0,
+			'Non-USA': 0,
+			'World': 0,
+			'USA only': 0
+		}
 		#comparacion para calcular los exitos y los fracasos
 		for i in range(len(s_list)): #len(s_list) = len(pred_list)
 			if s_list[i][0] == pred_list[i][0]:
@@ -10,13 +16,26 @@ class Vector():
 			else:
 				self.incorrectos += 1
 
+		for i in range(len(s_list)):
+			if int(s_list[i][0]) == 1:
+				self.ocurrencias['Undetermined'] += 1
+			elif int(s_list[i][0]) == 2:
+				self.ocurrencias['Non-USA'] += 1
+			elif int(s_list[i][0]) == 3:
+				self.ocurrencias['World'] += 1
+			else:
+				self.ocurrencias['USA only'] += 1
+
 		for i in range(len(pred_list)):
-			clase = int(pred_list[i][0])
-			clase_pointer = float(pred_list[i][1:].split()[clase-1])
-			predictions = map(lambda x: abs(float(x)), pred_list[i][1:].split())
-			predictions.sort(reverse=True)
-			pred = predictions.index(clase_pointer)+1
-			self.mrr += 1.0/float(pred)
+			if pred_list[i][0] != s_list[i][0]:
+				clase = int(pred_list[i][0])
+				clase_pointer = float(pred_list[i][1:].split()[clase-1])
+				predictions = map(lambda x: abs(float(x)), pred_list[i][1:].split())
+				predictions.sort(reverse=True)
+				pred = predictions.index(clase_pointer)+1
+				self.mrr += 1.0/float(pred)
+			else:
+				self.mrr += 1.0
 			
 
 
