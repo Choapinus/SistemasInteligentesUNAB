@@ -26,7 +26,7 @@ if __name__ == '__main__':
 		vectores.append(Vector(s_train[i], predictions[i]))
 
 	for i in range(len(vectores)):
-		print 'iteracion '+str(i+1)
+		print '### iteracion '+str(i+1)+' ###\n'
 		print 'aciertos: '+str(vectores[i].correctos)
 		print 'errores: '+str(vectores[i].incorrectos)
 		print 'mrr: '+str(vectores[i].mrr/200.0)
@@ -37,6 +37,18 @@ if __name__ == '__main__':
 		print 'cant de undet: '+str(vectores[i].ocurrencias['Undetermined'])
 		print 'cant de world: '+str(vectores[i].ocurrencias['World'])
 		print 'cant de usa only: '+str(vectores[i].ocurrencias['USA only'])
+		print
+		print 'correctas non-usa: '+str(vectores[i].positive_vs_negative['Non-USA']['correctas'])\
+			  +'\t\tcorrectas undet: '+str(vectores[i].positive_vs_negative['Undetermined']['correctas'])\
+			  +'\t\tcorrectas world: '+str(vectores[i].positive_vs_negative['World']['correctas'])\
+			  +'\t\tcorrectas usa only: '+str(vectores[i].positive_vs_negative['USA only']['correctas'])
+
+		print 'incorrectas non-usa: '+str(vectores[i].positive_vs_negative['Non-USA']['incorrectas'])\
+			 +'\t\tincorrectas undet: '+str(vectores[i].positive_vs_negative['Undetermined']['incorrectas'])\
+			 +'\t\tincorrectas world: '+str(vectores[i].positive_vs_negative['World']['incorrectas'])\
+			 +'\t\tincorrectas usa only: '+str(vectores[i].positive_vs_negative['USA only']['incorrectas'])
+		print
+		print
 		print
 	print 'mrr promedio: '+str(mrr/2000.0)
 
@@ -58,6 +70,8 @@ if __name__ == '__main__':
 	print 'non_usa: '+str(non_usa)
 	print 'under: '+str(undet)
 	print 'world: '+str(world)
+
+
 
 	
 	"""

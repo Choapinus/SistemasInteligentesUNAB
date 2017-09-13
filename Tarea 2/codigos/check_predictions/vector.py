@@ -9,14 +9,40 @@ class Vector():
 			'World': 0,
 			'USA only': 0
 		}
+		self.positive_vs_negative = {
+			'Undetermined': {'correctas': 0, 'incorrectas': 0},
+			'Non-USA': {'correctas': 0, 'incorrectas': 0},
+			'World': {'correctas': 0, 'incorrectas': 0},
+			'USA only': {'correctas': 0, 'incorrectas': 0}
+		}
 		#comparacion para calcular los exitos y los fracasos
 		for i in range(len(s_list)): #len(s_list) = len(pred_list)
 			if s_list[i][0] == pred_list[i][0]:
 				self.correctos += 1
+
+				if int(pred_list[i][0]) == 1:
+					self.positive_vs_negative['Undetermined']['correctas'] += 1
+				elif int(pred_list[i][0]) == 2:
+					self.positive_vs_negative['Non-USA']['correctas'] += 1
+				elif int(pred_list[i][0]) == 3:
+					self.positive_vs_negative['World']['correctas'] += 1
+				else:
+					self.positive_vs_negative['USA only']['correctas'] += 1
+
 			else:
 				self.incorrectos += 1
+				
+				if int(pred_list[i][0]) == 1:
+					self.positive_vs_negative['Undetermined']['incorrectas'] += 1
+				elif int(pred_list[i][0]) == 2:
+					self.positive_vs_negative['Non-USA']['incorrectas'] += 1
+				elif int(pred_list[i][0]) == 3:
+					self.positive_vs_negative['World']['incorrectas'] += 1
+				else:
+					self.positive_vs_negative['USA only']['incorrectas'] += 1
 
-		for i in range(len(s_list)):
+
+		for i in range(len(pred_list)):
 			if int(pred_list[i][0]) == 1:
 				self.ocurrencias['Undetermined'] += 1
 			elif int(pred_list[i][0]) == 2:
