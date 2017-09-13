@@ -1,0 +1,22 @@
+comparar el set de datos de entrenamiento (Si) vs el prediction_xx.dat
+linea a linea y ver si clasifico bien o clasifico mal
+ejemplo:
+
+
+S_07.dat, lineas 3 y 4
+4 168:1 593:1 635:2 1139:2 1534:1 3069:1 3899:1 4096:1 4365:1 4484:1 4602:1 5097:1 5384:2 6638:1 8134:1 8444:1 9169:1 9341:1 11264:1 11690:1 12019:1 12103:1 12584:1 13068:1 13292:1 13603:1 13714:1 13982:2 14139:1 14429:3 14553:1
+4 64:1 176:1 387:1 495:1 797:1 942:1 1336:1 1607:1 1898:1 1900:1 2365:1
+
+
+prediction_07.dat, lineas 3 y 4
+4 -74.462816 9.993501 -45.911168 110.380487 
+2 11.264636 48.497333 -75.407158 15.645190
+
+
+
+el primero esta bien clasificado
+el segundo esta como el hoyo
+
+
+
+para calcular el mrr: https://en.wikipedia.org/wiki/Mean_reciprocal_rank
