@@ -1,0 +1,50 @@
+* Importante: tener instalado Python 2.7.13 (ultima version)
+
+
+* Importante: en la carpeta "make_vectors" podran crear sus vectores y el random cross-validation (recomendado por el profesor)
+  Este codigo (con instrucciones escritas en su carpeta correspondiente) generara la data de entrenamiento en la carpeta training,
+  tanto los splits (Si) como los sets de entrenamiento (Ei) separados en sus carpetas correspondientes (S_train, E_train)
+  *** Destacar que este codigo nunca generara los mismos splits ni los mismos sets de entrenamientos, ya que el cross-validation es random
+
+
+* Luego de haber creado sus vectores, splits y conjuntos de entrenamientos, deberan copiar y pegar las carpetas S_train y E_train
+  en donde se ubican los ejecutables de la SVM (svm_multiclass_learn y svm_multiclass_classify).
+  Para que quede mas ordenado, deberan crear dos carpetas mas (models y predictions)
+  *** Para que el codigo funcione correctamente, las carpetas se deben llamar tal como se describen
+
+
+* Para entrenar la SVM con sus datos en sus carpetas, deberan navegar entre ellas.
+  Dentro de la carpeta de la SVM, Comando de ejemplo para entrenar: 
+  	$ svm_multiclass_learn.exe -c 5000 E_train/E_01.dat models/modelo_01.dat
+  	$ svm_multiclass_learn.exe -c 5000 E_train/E_02.dat models/modelo_02.dat
+  	$ svm_multiclass_learn.exe -c 5000 E_train/E_03.dat models/modelo_03.dat
+  	... y asi con los demas sets de entrenamiento
+
+
+* Para obtener sus predicciones (en el mismo directorio de la SVM), 
+  deberan ejecutar sus comandos como indica el ejemplo:
+  	$ svm_multiclass_classify.exe S_train/S_01.dat models/modelo_01.dat predictions/prediction_01.dat
+  	$ svm_multiclass_classify.exe S_train/S_02.dat models/modelo_02.dat predictions/prediction_02.dat
+  	$ svm_multiclass_classify.exe S_train/S_03.dat models/modelo_03.dat predictions/prediction_03.dat
+  	... y asi para las demas predicciones
+
+
+* Importante: copiar y pegar las carpetas "S_train" y "predictions" a la carpeta "check_predictions".
+   Aqui es donde se ubica el programa, el cual mostrara los datos que debera utilizar para armar sus cosillas
+
+
+* Dentro del directorio "check_predictions" y con las carpetas previamente mencionadas copiadas, 
+  ejecutar por consola (Cmder pls) el comando "python main.py" y les mostrara sus predicciones de manera mas entendible.
+
+
+* Si se muestra el error "python no se reconoce como comando ...", ejecute el comando "C:/Python27/python main.py"
+
+
+* Dentro de la carpeta "enunciado_informe" encontrara imagenes de algunas formulas que debera usar y un excel
+  con la matriz de confusion incompleta. Usted debera rellenar los TP, TN, FN y FP bajo su concepcion
+  Pd: se escoge una clase como positiva y las demas negativas. Se suman los datos de cada iteracion
+  	  y debera crear una tabla para cada clase.
+
+
+Suerte c:
+

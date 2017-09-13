@@ -16,9 +16,7 @@ if __name__ == '__main__':
 		predictions[i] = open(predictions[i], 'r')
 		predictions[i] = predictions[i].readlines()
 
-	#print 's_train:', s_train[0][0]
-	#print 'predictions', predictions[0][0]
-
+	
 	vectores = []
 	mrr = 0.0
 
@@ -75,12 +73,10 @@ if __name__ == '__main__':
 
 	
 	"""
-	* corregir y calcular mrr (mrr) es por clase??
-
-	* contar cuantas ocurrencias hubieron de cada etiqueta en las predicciones
 	* Por convencion, la clase que uno le interesa identificar es la positiva, y todo el resto se le llama negativo.
 	* Accuracy: El ratio de casos correctamente clasificados versus el numero total de casos de prueba.
-
+	
+	Enunciado:
 	Cuando se tengan los diez archivos de resultados, se debe calcular el
 	desempeno del clasificador SVM para predecir la ubicacion geografica. Calcule
 	el MRR y la matriz de confusion. Entregue tambien los promedios de los diez
@@ -90,10 +86,6 @@ if __name__ == '__main__':
 	Calcule la curva ROC, Lift, F(1)-score y el estimador AUC asumiendo cada una
 	de las variables como positivas.
 
-
-	done:
-	* accuracy-desempeno
-	
 	"""
 	
 
