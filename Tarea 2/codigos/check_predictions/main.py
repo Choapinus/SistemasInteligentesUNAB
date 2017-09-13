@@ -38,7 +38,7 @@ if __name__ == '__main__':
 		print 'cant de world: '+str(vectores[i].ocurrencias['World'])
 		print 'cant de usa only: '+str(vectores[i].ocurrencias['USA only'])
 		print
-	print 'mrr general: '+str(mrr/2000.0)
+	print 'mrr promedio: '+str(mrr/2000.0)
 
 
 	print
