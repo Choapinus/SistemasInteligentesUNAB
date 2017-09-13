@@ -87,6 +87,12 @@ def get_words(etiquetas):
 	return list(words)
 
 def cross_validation(data='data/vectores.txt'):
+	from random import randint
+
+	random = []
+	for i in range(2000):
+		random.append(randint(0, 1999))
+
 	data = open(data, 'r')
 	data = data.readlines()
 	#Los S (splits del dataset)
@@ -101,35 +107,35 @@ def cross_validation(data='data/vectores.txt'):
 	S_09 = open('training/S_train/S_09.dat', 'w')
 	S_10 = open('training/S_train/S_10.dat', 'w')
 
-	for i in data[:200]:
-		S_01.write(i)
+	for i in range(200):
+		S_01.write(data[random[i]])
 	S_01.close()
-	for i in data[200:400]:
-		S_02.write(i)
+	for i in range(200, 400):
+		S_02.write(data[random[i]])
 	S_02.close()
-	for i in data[400:600]:
-		S_03.write(i)
+	for i in range(400, 600):
+		S_03.write(data[random[i]])
 	S_03.close()
-	for i in data[600:800]:
-		S_04.write(i)
+	for i in range(600, 800):
+		S_04.write(data[random[i]])
 	S_04.close()
-	for i in data[800:1000]:
-		S_05.write(i)
+	for i in range(800, 1000):
+		S_05.write(data[random[i]])
 	S_05.close()
-	for i in data[1000:1200]:
-		S_06.write(i)
+	for i in range(1000, 1200):
+		S_06.write(data[random[i]])
 	S_06.close()
-	for i in data[1200:1400]:
-		S_07.write(i)
+	for i in range(1200, 1400):
+		S_07.write(data[random[i]])
 	S_07.close()
-	for i in data[1400:1600]:
-		S_08.write(i)
+	for i in range(1400, 1600):
+		S_08.write(data[random[i]])
 	S_08.close()
-	for i in data[1600:1800]:
-		S_09.write(i)
+	for i in range(1600, 1800):
+		S_09.write(data[random[i]])
 	S_09.close()
-	for i in data[1800:2000]:
-		S_10.write(i)
+	for i in range(1800, 2000):
+		S_10.write(data[random[i]])
 	S_10.close()
 
 	#Los E (sets de entrenamiento)
@@ -145,60 +151,60 @@ def cross_validation(data='data/vectores.txt'):
 	E_10 = open('training/E_train/E_10.dat', 'w')
 
 
-	for i in data[200:]:
-		E_01.write(i)
+	for i in random[200:]:
+		E_01.write(data[i])
 	E_01.close()
 	
-	for i in data[:200]:
-		E_02.write(i)
-	for i in data[400:]:
-		E_02.write(i)
+	for i in random[:200]:
+		E_02.write(data[i])
+	for i in random[400:]:
+		E_02.write(data[i])
 	E_02.close()
 
-	for i in data[:400]:
-		E_03.write(i)
-	for i in data[600:]:
-		E_03.write(i)
+	for i in random[:400]:
+		E_03.write(data[i])
+	for i in random[600:]:
+		E_03.write(data[i])
 	E_03.close()
 
-	for i in data[:600]:
-		E_04.write(i)
-	for i in data[800:]:
-		E_04.write(i)
+	for i in random[:600]:
+		E_04.write(data[i])
+	for i in random[800:]:
+		E_04.write(data[i])
 	E_04.close()
 	
-	for i in data[:800]:
-		E_05.write(i)
-	for i in data[1000:]:
-		E_05.write(i)
+	for i in random[:800]:
+		E_05.write(data[i])
+	for i in random[1000:]:
+		E_05.write(data[i])
 	E_05.close()
 	
-	for i in data[:1000]:
-		E_06.write(i)
-	for i in data[1200:]:
-		E_06.write(i)
+	for i in random[:1000]:
+		E_06.write(data[i])
+	for i in random[1200:]:
+		E_06.write(data[i])
 	E_06.close()
 	
-	for i in data[:1200]:
-		E_07.write(i)
-	for i in data[1400:]:
-		E_07.write(i)
+	for i in random[:1200]:
+		E_07.write(data[i])
+	for i in random[1400:]:
+		E_07.write(data[i])
 	E_07.close()
 	
-	for i in data[:1400]:
-		E_08.write(i)
-	for i in data[1600:]:
-		E_08.write(i)
+	for i in random[:1400]:
+		E_08.write(data[i])
+	for i in random[1600:]:
+		E_08.write(data[i])
 	E_08.close()
 	
-	for i in data[:1600]:
-		E_09.write(i)
-	for i in data[1800:]:
-		E_09.write(i)
+	for i in random[:1600]:
+		E_09.write(data[i])
+	for i in random[1800:]:
+		E_09.write(data[i])
 	E_09.close()
 	
-	for i in data[:1800]:
-		E_10.write(i)
+	for i in random[:1800]:
+		E_10.write(data[i])
 	E_10.close()
 
 
