@@ -31,7 +31,7 @@ class Vector():
 
 			else:
 				self.incorrectos += 1
-				
+
 				if int(pred_list[i][0]) == 1:
 					self.positive_vs_negative['Undetermined']['incorrectas'] += 1
 				elif int(pred_list[i][0]) == 2:
@@ -55,8 +55,8 @@ class Vector():
 		#mrr
 		for i in range(len(pred_list)):
 			true_clase = int(s_list[i][0])
-			clase_pointer = abs(float(pred_list[i][1:].split()[true_clase-1]))
-			predictions = map(lambda x: abs(float(x)), pred_list[i][1:].split())
+			clase_pointer = float(pred_list[i][1:].split()[true_clase-1])
+			predictions = map(lambda x: float(x), pred_list[i][1:].split())
 			predictions.sort(reverse=True)
 			index = predictions.index(clase_pointer)+1
 			self.mrr += 1.0/float(index)
