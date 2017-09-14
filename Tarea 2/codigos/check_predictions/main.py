@@ -52,22 +52,38 @@ if __name__ == '__main__':
 
 
 	print
-	print 'para la curva roc'
+	print
+	print 'para matriz de confusion\n'
+	correctas_usa_only = 0
+	correctas_non_usa = 0
+	correctas_undet = 0
+	correctas_world = 0
 
-	usa_only = 0
-	non_usa = 0
-	undet = 0
-	world = 0
+	incorrectas_usa_only = 0
+	incorrectas_non_usa = 0
+	incorrectas_undet = 0
+	incorrectas_world = 0
 
 	for vec in vectores:
-		usa_only += vec.ocurrencias['USA only']
-		non_usa += vec.ocurrencias['Non-USA']
-		undet += vec.ocurrencias['Undetermined']
-		world += vec.ocurrencias['World']
-	print 'usa_only: '+str(usa_only)
-	print 'non_usa: '+str(non_usa)
-	print 'under: '+str(undet)
-	print 'world: '+str(world)
+		correctas_usa_only += vec.positive_vs_negative['USA only']['correctas']
+		correctas_non_usa += vec.positive_vs_negative['Non-USA']['correctas']
+		correctas_undet += vec.positive_vs_negative['Undetermined']['correctas']
+		correctas_world += vec.positive_vs_negative['World']['correctas']
+
+		incorrectas_usa_only += vec.positive_vs_negative['USA only']['incorrectas']
+		incorrectas_non_usa += vec.positive_vs_negative['Non-USA']['incorrectas']
+		incorrectas_undet += vec.positive_vs_negative['Undetermined']['incorrectas']
+		incorrectas_world += vec.positive_vs_negative['World']['incorrectas']
+	
+	print 'correctas non-usa: '+str(correctas_non_usa)\
+		  +'\t\tcorrectas undet: '+str(correctas_undet)\
+		  +'\t\tcorrectas world: '+str(correctas_world)\
+		  +'\t\tcorrectas usa only: '+str(correctas_usa_only)
+
+	print 'incorrectas non-usa: '+str(incorrectas_non_usa)\
+		  +'\t\tincorrectas undet: '+str(incorrectas_undet)\
+		  +'\t\tincorrectas world: '+str(incorrectas_world)\
+		  +'\t\tincorrectas usa only: '+str(incorrectas_usa_only)
 
 
 
