@@ -60,6 +60,7 @@ class Vector():
 			predictions.sort(reverse=True)
 			index = predictions.index(clase_pointer)+1
 			self.mrr += 1.0/float(index)
+		self.mrr /= 200.0
 
 		
 			

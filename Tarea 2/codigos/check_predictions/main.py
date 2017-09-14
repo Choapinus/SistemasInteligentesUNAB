@@ -27,7 +27,7 @@ if __name__ == '__main__':
 		print '### iteracion '+str(i+1)+' ###\n'
 		print 'aciertos: '+str(vectores[i].correctos)
 		print 'errores: '+str(vectores[i].incorrectos)
-		print 'mrr: '+str(vectores[i].mrr/200.0)
+		print 'mrr: '+str(vectores[i].mrr)
 		mrr += vectores[i].mrr
 		print 'average loss: '+str(float(vectores[i].incorrectos)/200.0*100.0) #200 por ser de 200 elementos los splits
 		print 'accuracy: '+str(vectores[i].correctos/200.0)
@@ -48,7 +48,7 @@ if __name__ == '__main__':
 		print
 		print
 		print
-	print 'mrr promedio: '+str(mrr/2000.0)
+	print 'mrr promedio: '+str(mrr/10.0)
 
 
 	print

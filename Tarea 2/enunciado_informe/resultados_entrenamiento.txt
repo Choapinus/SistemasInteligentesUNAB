@@ -1,0 +1,188 @@
+### resultados del entrenamiento ###
+
+TODO:
+	ROC: pagina 82, ponencia 1
+	Lift: hacer codigo que te dijo el braulio
+	F1-score: 2 * (precision * recall) / (precision + recall), por split, luego un promedio
+	AUC: gg
+
+
+
+
+### iteracion 1 ###
+
+aciertos: 173
+errores: 27
+mrr: 0.9225
+average loss: 13.5
+accuracy: 0.865
+cant de non-usa: 59
+cant de undet: 48
+cant de world: 2
+cant de usa only: 91
+
+correctas non-usa: 48           correctas undet: 43             correctas world: 2              correctas usa only: 80
+incorrectas non-usa: 11         incorrectas undet: 5            incorrectas world: 0            incorrectas usa only: 11
+
+
+
+### iteracion 2 ###
+
+aciertos: 164
+errores: 36
+mrr: 0.890833333333
+average loss: 18.0
+accuracy: 0.82
+cant de non-usa: 52
+cant de undet: 40
+cant de world: 4
+cant de usa only: 104
+
+correctas non-usa: 46           correctas undet: 32             correctas world: 3              correctas usa only: 83
+incorrectas non-usa: 6          incorrectas undet: 8            incorrectas world: 1            incorrectas usa only: 21
+
+
+
+### iteracion 3 ###
+
+aciertos: 163
+errores: 37
+mrr: 0.895
+average loss: 18.5
+accuracy: 0.815
+cant de non-usa: 54
+cant de undet: 43
+cant de world: 4
+cant de usa only: 99
+
+correctas non-usa: 49           correctas undet: 34             correctas world: 4              correctas usa only: 76
+incorrectas non-usa: 5          incorrectas undet: 9            incorrectas world: 0            incorrectas usa only: 23
+
+
+
+### iteracion 4 ###
+
+aciertos: 167
+errores: 33
+mrr: 0.90125
+average loss: 16.5
+accuracy: 0.835
+cant de non-usa: 56
+cant de undet: 39
+cant de world: 8
+cant de usa only: 97
+
+correctas non-usa: 47           correctas undet: 34             correctas world: 7              correctas usa only: 79
+incorrectas non-usa: 9          incorrectas undet: 5            incorrectas world: 1            incorrectas usa only: 18
+
+
+
+### iteracion 5 ###
+
+aciertos: 162
+errores: 38
+mrr: 0.892083333333
+average loss: 19.0
+accuracy: 0.81
+cant de non-usa: 51
+cant de undet: 44
+cant de world: 5
+cant de usa only: 100
+
+correctas non-usa: 43           correctas undet: 39             correctas world: 3              correctas usa only: 77
+incorrectas non-usa: 8          incorrectas undet: 5            incorrectas world: 2            incorrectas usa only: 23
+
+
+
+### iteracion 6 ###
+
+aciertos: 167
+errores: 33
+mrr: 0.904166666667
+average loss: 16.5
+accuracy: 0.835
+cant de non-usa: 48
+cant de undet: 44
+cant de world: 0
+cant de usa only: 108
+
+correctas non-usa: 46           correctas undet: 35             correctas world: 0              correctas usa only: 86
+incorrectas non-usa: 2          incorrectas undet: 9            incorrectas world: 0            incorrectas usa only: 22
+
+
+
+### iteracion 7 ###
+
+aciertos: 168
+errores: 32
+mrr: 0.90875
+average loss: 16.0
+accuracy: 0.84
+cant de non-usa: 49
+cant de undet: 43
+cant de world: 5
+cant de usa only: 103
+
+correctas non-usa: 39           correctas undet: 43             correctas world: 4              correctas usa only: 82
+incorrectas non-usa: 10         incorrectas undet: 0            incorrectas world: 1            incorrectas usa only: 21
+
+
+
+### iteracion 8 ###
+
+aciertos: 166
+errores: 34
+mrr: 0.90625
+average loss: 17.0
+accuracy: 0.83
+cant de non-usa: 44
+cant de undet: 42
+cant de world: 4
+cant de usa only: 110
+
+correctas non-usa: 36           correctas undet: 37             correctas world: 4              correctas usa only: 89
+incorrectas non-usa: 8          incorrectas undet: 5            incorrectas world: 0            incorrectas usa only: 21
+
+
+
+### iteracion 9 ###
+
+aciertos: 164
+errores: 36
+mrr: 0.89375
+average loss: 18.0
+accuracy: 0.82
+cant de non-usa: 55
+cant de undet: 42
+cant de world: 3
+cant de usa only: 100
+
+correctas non-usa: 45           correctas undet: 30             correctas world: 2              correctas usa only: 87
+incorrectas non-usa: 10         incorrectas undet: 12           incorrectas world: 1            incorrectas usa only: 13
+
+
+
+### iteracion 10 ###
+
+aciertos: 164
+errores: 36
+mrr: 0.89875
+average loss: 18.0
+accuracy: 0.82
+cant de non-usa: 63
+cant de undet: 52
+cant de world: 5
+cant de usa only: 80
+
+correctas non-usa: 54           correctas undet: 45             correctas world: 4              correctas usa only: 61
+incorrectas non-usa: 9          incorrectas undet: 7            incorrectas world: 1            incorrectas usa only: 19
+
+
+
+mrr promedio: 0.901333333333
+
+
+para matriz de confusion
+
+correctas non-usa: 453          correctas undet: 372            correctas world: 33             correctas usa only: 800
+incorrectas non-usa: 78         incorrectas undet: 65           incorrectas world: 7            incorrectas usa only: 192
