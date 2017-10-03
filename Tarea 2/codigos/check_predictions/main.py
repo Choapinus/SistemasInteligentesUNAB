@@ -29,7 +29,7 @@ if __name__ == '__main__':
 		print 'errores: '+str(vectores[i].incorrectos)
 		print 'mrr: '+str(vectores[i].mrr)
 		mrr += vectores[i].mrr
-		print 'average loss: '+str(float(vectores[i].incorrectos)/200.0*100.0) #200 por ser de 200 elementos los splits
+		print 'average loss: '+str(float(vectores[i].incorrectos)/200.0*100.0) #200 por ser de 200 elementos el split
 		print 'accuracy: '+str(vectores[i].correctos/200.0)
 		print 'cant de non-usa: '+str(vectores[i].ocurrencias['Non-USA'])
 		print 'cant de undet: '+str(vectores[i].ocurrencias['Undetermined'])
