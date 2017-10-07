@@ -13,27 +13,29 @@ if __name__ == '__main__':
 		for data in cents_data:
 			cents.append(Centroid(data))
 
-		print cents[0].name
-		print 'len data: ', cents[0].data.__len__()
-		print cents[0].etiquetas
-		print
-		print cents[1].name
-		print 'len data: ', cents[1].data.__len__()
-		print cents[1].etiquetas
-		print
-		print cents[2].name
-		print 'len data: ', cents[2].data.__len__()
-		print cents[2].etiquetas
-		print
-		print cents[3].name
-		print 'len data: ', cents[3].data.__len__()
-		print cents[3].etiquetas
-		print
+		
 
-		if( len(cents[0]) > 1000 and len(cents[0]) < 200 and 
-			len(cents[1]) > 1000 and len(cents[1]) < 200 and 
-			len(cents[2]) > 1000 and len(cents[2]) < 200 and 
-			len(cents[3]) > 1000 and len(cents[3]) < 200 and):
+		if(not (len(cents[0].data) > 1000 or len(cents[0].data) < 200 or 
+			len(cents[1].data) > 1000 or len(cents[1].data) < 200 or 
+			len(cents[2].data) > 1000 or len(cents[2].data) < 200 or 
+			len(cents[3].data) > 1000 or len(cents[3].data) < 200 or)):
+			print cents[0].name
+			print 'len data: ', cents[0].data.__len__()
+			print cents[0].etiquetas
+			print
+			print cents[1].name
+			print 'len data: ', cents[1].data.__len__()
+			print cents[1].etiquetas
+			print
+			print cents[2].name
+			print 'len data: ', cents[2].data.__len__()
+			print cents[2].etiquetas
+			print
+			print cents[3].name
+			print 'len data: ', cents[3].data.__len__()
+			print cents[3].etiquetas
+			print
+		else:
 			main()
 
 
