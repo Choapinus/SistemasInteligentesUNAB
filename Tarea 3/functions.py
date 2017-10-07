@@ -30,6 +30,7 @@ def generate_random_vectors(name='vectores.txt'):
 def get_centroids(name='rand_vec.txt'):
 	centroids = check_output(('yakmo -k 4 '+name+' - - -O 1').split())
 	centroids = centroids.split('\n')
+	del centroids[-1] #contiene nada y tira error por culpa de esta wea
 	return centroids
 
 def get_centroids_choppy(name='centroids_detail.txt'):
