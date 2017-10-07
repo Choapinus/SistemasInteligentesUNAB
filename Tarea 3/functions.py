@@ -29,6 +29,9 @@ def generate_random_vectors(name='vectores.txt'):
 
 def get_centroids(name='rand_vec.txt'):
 	centroids = check_output(('yakmo -k 4 '+name+' - - -O 1').split())
+	arch = open('centroids_detail.txt', 'w')
+	arch.writelines(centroids)
+	arch.close()
 	centroids = centroids.split('\n')
 	del centroids[-1] #contiene nada y tira error por culpa de esta wea
 	return centroids
@@ -38,3 +41,35 @@ def get_centroids_choppy(name='centroids_detail.txt'):
 	centroids = arch.readlines()
 	arch.close()
 	return centroids
+
+def main(vectores_original='vectores.txt', random_vectores='rand_vec.txt'):
+	cents = []
+
+	generate_random_vectors(vectores_original) #descomentar para quien no tenga sus vectores random creados
+	cents_data = get_centroids(random_vectores)
+	
+	for data in cents_data:
+		cents.append(Centroid(data))
+
+	if( len(cents[0].data) > 1300 or len(cents[0].data) < 150 or 
+		len(cents[1].data) > 1300 or len(cents[1].data) < 150 or 
+		len(cents[2].data) > 1300 or len(cents[2].data) < 150 or 
+		len(cents[3].data) > 1300 or len(cents[3].data) < 150):
+		main()
+	else:
+		print cents[0].name
+		print 'len data: ', cents[0].data.__len__()
+		print cents[0].etiquetas
+		print
+		print cents[1].name
+		print 'len data: ', cents[1].data.__len__()
+		print cents[1].etiquetas
+		print
+		print cents[2].name
+		print 'len data: ', cents[2].data.__len__()
+		print cents[2].etiquetas
+		print
+		print cents[3].name
+		print 'len data: ', cents[3].data.__len__()
+		print cents[3].etiquetas
+		print

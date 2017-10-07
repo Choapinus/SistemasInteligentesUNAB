@@ -3,7 +3,7 @@ class Centroid():
 		self.name = cent.split()[0]
 		self.data = cent.split()[1:]
 		self.etiquetas = {1:0, 2:0, 3:0, 4:0}
-		
+
 		for i in range(len(self.data)):
 			if self.data[i] == '1':
 				self.etiquetas[1] += 1
