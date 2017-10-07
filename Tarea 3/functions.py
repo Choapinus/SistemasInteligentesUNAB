@@ -28,7 +28,7 @@ def generate_random_vectors(name='vectores.txt'):
 	print 'archivo rand_vec.txt creado'
 
 def get_centroids(name='rand_vec.txt'):
-	centroids = check_output('yakmo -k 4 '+name+' - - -O 1'.split())
+	centroids = check_output(('yakmo -k 4 '+name+' - - -O 1').split())
 	centroids = centroids.split('\n')
 	return centroids
 
