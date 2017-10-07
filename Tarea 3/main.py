@@ -13,18 +13,18 @@ if __name__ == '__main__':
 		cents.append(Centroid(data))
 
 	print cents[0].name
-	print cents[0].data.__len__()
+	print 'len data: ', cents[0].data.__len__()
 	print cents[0].etiquetas
 	print
 	print cents[1].name
-	print cents[1].data.__len__()
+	print 'len data: ', cents[1].data.__len__()
 	print cents[1].etiquetas
 	print
-	print cents[2].name
+	print 'len data: ', cents[2].name
 	print cents[2].data.__len__()
 	print cents[2].etiquetas
 	print
-	print cents[3].name
+	print 'len data: ', cents[3].name
 	print cents[3].data.__len__()
 	print cents[3].etiquetas
 	print
