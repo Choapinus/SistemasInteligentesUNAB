@@ -15,10 +15,10 @@ if __name__ == '__main__':
 
 		
 
-		if(not (len(cents[0].data) > 1300 and len(cents[0].data) < 100 or 
-				len(cents[1].data) > 1300 and len(cents[1].data) < 100 or 
-				len(cents[2].data) > 1300 and len(cents[2].data) < 100 or 
-				len(cents[3].data) > 1300 and len(cents[3].data) < 100)):
+		if(not (len(cents[0].data) > 1300 and len(cents[0].data) < 150 or 
+				len(cents[1].data) > 1300 and len(cents[1].data) < 150 or 
+				len(cents[2].data) > 1300 and len(cents[2].data) < 150 or 
+				len(cents[3].data) > 1300 and len(cents[3].data) < 150)):
 			print cents[0].name
 			print 'len data: ', cents[0].data.__len__()
 			print cents[0].etiquetas
