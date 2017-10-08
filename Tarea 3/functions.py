@@ -57,19 +57,13 @@ def main(vectores_original='vectores.txt', random_vectores='rand_vec.txt'):
 		len(cents[3].data) > 1300 or len(cents[3].data) < 150):
 		main()
 	else:
-		print cents[0].name
-		print 'len data: ', cents[0].data.__len__()
-		print cents[0].etiquetas
-		print
-		print cents[1].name
-		print 'len data: ', cents[1].data.__len__()
-		print cents[1].etiquetas
-		print
-		print cents[2].name
-		print 'len data: ', cents[2].data.__len__()
-		print cents[2].etiquetas
-		print
-		print cents[3].name
-		print 'len data: ', cents[3].data.__len__()
-		print cents[3].etiquetas
-		print
+		for i in range(len(cents)):
+			print 'centroid: ', cents[i].name
+			print 'length data: ', cents[i].data.__len__()
+			print 'data: ', cents[i].etiquetas
+			print 'entropy: ', cents[i].entropy
+			print 'purity: ', cents[i].purity
+			print 'precision: ', cents[i].precision
+			print 'recall: ', cents[i].recall
+			print 'F1 - Score: ', cents[i].f1_score
+			print

@@ -9,31 +9,28 @@ if __name__ == '__main__':
 		main()
 	else:
 		cents = []
-
-		#generate_random_vectors('vectores.txt') #descomentar para quien no tenga sus vectores random creados
-		#cents_data = get_centroids('rand_vec.txt')
 		cents_data = get_centroids_choppy()
 		
 		for data in cents_data:
 			if data != '\n':
 				cents.append(Centroid(data))
 
-		print cents[0].name
-		print 'len data: ', cents[0].data.__len__()
-		print cents[0].etiquetas
-		print
-		print cents[1].name
-		print 'len data: ', cents[1].data.__len__()
-		print cents[1].etiquetas
-		print
-		print cents[2].name
-		print 'len data: ', cents[2].data.__len__()
-		print cents[2].etiquetas
-		print
-		print cents[3].name
-		print 'len data: ', cents[3].data.__len__()
-		print cents[3].etiquetas
-		print
+		for i in range(len(cents)):
+			print 'centroid: ', cents[i].name
+			print 'length data: ', cents[i].data.__len__()
+			print 'data: ', cents[i].etiquetas
+			print '\nmetrics:\n\t   ################'
+			for j in range(len(cents[i].metrics)):
+				print '\n\tname: ', cents[i].metrics[j].name
+				print '\tentropy: ', cents[i].metrics[j].entropy
+				print '\tpurity: ', cents[i].metrics[j].purity
+				print '\tprecision: ', cents[i].metrics[j].precision
+				print '\trecall: ', cents[i].metrics[j].recall
+				print '\tF1 - Score: ', cents[i].metrics[j].f1_score
+				print 
+			print '\t   ################'
+			print
+		
 
 else:
 	print 'c:'
