@@ -1,9 +1,10 @@
 if __name__ == '__main__':
-	from functions import generate_random_vectors, get_centroids, get_centroids_choppy, main
+	from functions import get_centroids_choppy, main
 	from centroids import Centroid
 
 	#opcion 1 es para calcular las weas de centroides hasta que den algo cercano a la realidad
-	option = 2
+	#opcion 2 es para ver los datos y metricas de manera entendible
+	option = 1
 
 	if option == 1:
 		main()

@@ -1,5 +1,6 @@
 from random import randint
 from subprocess import check_output
+from centroids import Centroid
 
 def generate_random_vectors(name='vectores.txt'):
 	"""
