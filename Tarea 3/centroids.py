@@ -2,12 +2,15 @@ from math import log
 
 class Metrics():
 	def __init__(self, key, value, total):
-		self.name = key
-		self.entropy = float(value)/float(total)*log(float(value)/float(total), 2)*-1.0
-		self.purity = float(value)/float(total)
-		self.precision = self.purity
-		self.recall = float(value)/2000.0
-		self.f1_score = (2.0*self.precision*self.recall)/(self.precision+self.recall)
+		try:
+			self.name = key
+			self.entropy = float(value)/float(total)*log(float(value)/float(total), 2)*-1.0
+			self.purity = float(value)/float(total)
+			self.precision = self.purity
+			self.recall = float(value)/2000.0
+			self.f1_score = (2.0*self.precision*self.recall)/(self.precision+self.recall)
+		except ValueError:
+			pass
 
 
 class Centroid():
