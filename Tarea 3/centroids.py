@@ -11,6 +11,8 @@ class Metrics():
 			self.f1_score = (2.0*self.precision*self.recall)/(self.precision+self.recall)
 		except ValueError:
 			pass
+		except Exception:
+			print 'gg in centroids.py'
 
 
 class Centroid():

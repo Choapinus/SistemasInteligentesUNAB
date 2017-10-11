@@ -62,9 +62,14 @@ def main(vectores_original='vectores.txt', random_vectores='rand_vec.txt'):
 			print 'centroid: ', cents[i].name
 			print 'length data: ', cents[i].data.__len__()
 			print 'data: ', cents[i].etiquetas
-			print 'entropy: ', cents[i].entropy
-			print 'purity: ', cents[i].purity
-			print 'precision: ', cents[i].precision
-			print 'recall: ', cents[i].recall
-			print 'F1 - Score: ', cents[i].f1_score
+			print '\nmetrics:\n\t   ################'
+			for j in range(len(cents[i].metrics)):
+				print '\n\tname: ', cents[i].metrics[j].name
+				print '\tentropy: ', cents[i].metrics[j].entropy
+				print '\tpurity: ', cents[i].metrics[j].purity
+				print '\tprecision: ', cents[i].metrics[j].precision
+				print '\trecall: ', cents[i].metrics[j].recall
+				print '\tF1 - Score: ', cents[i].metrics[j].f1_score
+				print 
+			print '\t   ################'
 			print
