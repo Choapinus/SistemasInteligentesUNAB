@@ -46,17 +46,24 @@ def get_centroids_choppy(name='centroids_detail.txt'):
 def main(vectores_original='vectores.txt', random_vectores='rand_vec.txt'):
 	cents = []
 
-	generate_random_vectors(vectores_original) #descomentar para quien no tenga sus vectores random creados
+	generate_random_vectors(vectores_original)
 	cents_data = get_centroids(random_vectores)
 	
 	for data in cents_data:
 		cents.append(Centroid(data))
 
-	if( len(cents[0].data) > 1300 or len(cents[0].data) < 150 or 
+	while( len(cents[0].data) > 1300 or len(cents[0].data) < 150 or 
 		len(cents[1].data) > 1300 or len(cents[1].data) < 150 or 
 		len(cents[2].data) > 1300 or len(cents[2].data) < 150 or 
 		len(cents[3].data) > 1300 or len(cents[3].data) < 150):
-		main()
+		
+		cents = []
+
+		generate_random_vectors(vectores_original)
+		cents_data = get_centroids(random_vectores)
+		
+		for data in cents_data:
+			cents.append(Centroid(data))
 	else:
 		for i in range(len(cents)):
 			print 'centroid: ', cents[i].name

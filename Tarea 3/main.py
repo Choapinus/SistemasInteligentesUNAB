@@ -3,8 +3,8 @@ if __name__ == '__main__':
 	from centroids import Centroid
 
 	#opcion 1 es para calcular las weas de centroides hasta que den algo cercano a la realidad
-	#opcion 2 es para ver los datos y metricas de manera entendible
-	option = 1
+	#opcion 2 es para ver los datos y metricas de manera entendible siempre y cuando se tengan los archivos necesarios
+	option = 2
 
 	if option == 1:
 		main()
