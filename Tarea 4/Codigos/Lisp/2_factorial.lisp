@@ -2,7 +2,7 @@
 
 (defun factorial (num)
 	(cond
-		((= num 1) 1)
+		((= num 0) 1)
 		(t
 			(* num (factorial (- num 1)))
 		)
