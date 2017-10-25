@@ -1,3 +1,3 @@
-pertenece(X, [X|_]).
+pertenece([X|_], X).
 
-pertenece(X, [_|L]):- pertenece(X, L).
+pertenece([_|L], X):- pertenece(L, X).
