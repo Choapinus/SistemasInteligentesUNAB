@@ -133,7 +133,8 @@ class Chromosome(object):
 					true_new_path.append(self.path[i])					
 		# end of the transformation from gen_id to Gen objects
 
-		return Chromosome(true_new_path, exp_fit=decreased_fit, dist_function=self.dist_func_id, mutate_prob=self.given_mutate_prob)
+		return Chromosome(true_new_path, exp_fit=self.expected_fitness - decreased_fit, 
+			dist_function=self.dist_func_id, mutate_prob=self.given_mutate_prob)
 
 	def fitness_func(self):
 		"""
@@ -248,11 +249,12 @@ class GeneticAlgorithm(object):
 
 		# evaluate fitness and get the survivors
 		for chromosome in popu:
-			if chromosome.fitness <= chromosome.expected_fitness:
+			if chromosome.fitness <= chromosome.expected_fitness - decrease_fit:
 				survivors.append(chromosome)
 
 		new_gen = survivors[:]
 
+		# TODO: puede que se loopee 
 		# crossover
 		for _ in range(len(popu) - len(survivors)):
 			tryes = 0
@@ -273,8 +275,9 @@ class GeneticAlgorithm(object):
 						tryes = 0
 				new_gen.append(child)
 			except ValueError:
-				print 'no survivors with the actual fitness: '+str(self.actual_population[0].fitness)
-				pass
+				print 'no survivors with the actual fitness: '+str(min(map(lambda x: x.fitness, self.actual_population)))
+				print 'generating new one'
+				new_gen = self.generate_population(self.max_fitness)
 
 		self.actual_population = new_gen[:]
 
@@ -282,5 +285,11 @@ class GeneticAlgorithm(object):
 		for i in range(len(survivors)):
 			self.actual_population[i].mutation()
 
-		min_fit = min(map(lambda x: x.fitness, self.actual_population))
-		print 'min fitness actual pop: ', min_fit
+		#min_fit = min(map(lambda x: x.fitness, self.actual_population))
+		#print 'min fitness actual pop: ', min_fit
+
+		"""
+		for i in self.actual_population:
+			print i.fitness, i.expected_fitness
+		print
+		"""

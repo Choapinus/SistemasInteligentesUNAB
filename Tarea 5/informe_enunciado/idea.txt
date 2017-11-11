@@ -1,0 +1,32 @@
+idea:
+
+los archivos opt.tour son la solucion optima (camino a seguir)
+en "soluciones optimas" se encuentra la suma de los costos
+
+el otro: https://es.wikipedia.org/wiki/Inteligencia_de_enjambre
+BCO: https://es.wikipedia.org/wiki/Algoritmo_de_la_colonia_de_hormigas
+
+
+
+
+DIMENSION is the number of nodes for the ATSP or TSP instances. EDGE_WEIGHT_TYPE specifies how the edge weight are defined. In this case (EUC_2D), it is the Euclidean distance in the plane. Several types of distances are considered. The NODE_COORD_SECTION keyword starts the node coordinates section. Each line is made of three numbers:
+
+Node_id x y
+Node_id is a unique integer (\geqslant 1) node identifier and (x,y) are Cartesian coordinates unless otherwise stated. The coordinates don’t have to be integers and can be any real numbers.
+
+Not all instances have node coordinates.
+
+
+como las weas son coordenadas, a la vez son distancias
+asi que se puede aplicar cualquier metrica de distancia por la puta madre
+
+
+
+
+
+resuelto (java):
+https://github.com/LazoCoder/Genetic-Algorithm-for-the-Traveling-Salesman-Problem
+
+
+manual:
+https://acrogenesis.com/or-tools/documentation/user_manual/manual/tsp/tsp.html

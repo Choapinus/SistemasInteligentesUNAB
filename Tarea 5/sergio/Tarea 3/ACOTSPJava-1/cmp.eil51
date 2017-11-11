@@ -1,0 +1,51 @@
+ACO algorithms for the TSP
+Parameter-settings: 
+
+
+max_tries		 3
+max_tours		 10
+max_time		 3.0
+Utilities.seed		 -449133464
+optimum			 1
+n_ants			 10
+Ants.nn_ants		 20
+Ants.alpha		 1.0
+Ants.beta		 2.0
+Ants.rho		 0.1
+Ants.q_0		 0.98
+Ants.elitist_ants	 0
+Ants.ras_ranks		 0
+LocalSearch.ls_flag	 3
+LocalSearch.nn_ls	 20
+LocalSearch.dlb_flag	 true
+Ants.as_flag		 false
+Ants.eAnts.as_flag	 false
+rAnts.as_flag		 false
+mmAnts.as_flag		 false
+Ants.bwAnts.as_flag	 false
+Ants.acs_flag		 true
+
+
+begin problem tsp/eil51.tsp
+Utilities.seed -449133464
+begin try 0
+best 428	 iteration 1	 tours 12	 time 0.008
+best 427	 iteration 4	 tours 42	 time 0.019
+best 426	 iteration 139	 tours 1392	 time 0.146
+end try 0
+
+Utilities.seed -449133464
+begin try 1
+best 428	 iteration 1	 tours 12	 time 0.001
+best 427	 iteration 2	 tours 22	 time 0.002
+best 426	 iteration 211	 tours 2112	 time 0.06
+end try 1
+
+Utilities.seed -449133464
+begin try 2
+best 428	 iteration 1	 tours 12	 time 0.001
+best 427	 iteration 7	 tours 72	 time 0.003
+best 426	 iteration 223	 tours 2232	 time 0.069
+end try 2
+
+end problem eil51

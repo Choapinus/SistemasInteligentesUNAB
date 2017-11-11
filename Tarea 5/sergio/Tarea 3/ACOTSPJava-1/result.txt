@@ -1,0 +1,619 @@
+-acs
+-tries
+3
+-tours
+10
+-time
+3
+-i
+tsp/eil51.tsp
+ACO algorithms for the TSP
+OPTIONS:
+-t/time Time limit with argument 3.0
+-r/tries Number of tries with argument 3
+-s/tours Maximum number tours with argument 10
+Note: A seed was generated as -449133464
+Note: Optimal solution value is set to default 1
+-i/tsplibfile File with argument tsp/eil51.tsp
+-z/acs is set, run Ant Colony System
+Note: Number of ants is set to default 10
+Note: Alpha is set to default 1.0
+Note: Beta is set to default 2.0
+Note: Rho is set to default 0.1
+Note: q0 is set to default 0.98
+Note: Number of elitist ants is set to default 0
+Note: Number of ranks is set to default 0
+Note: Number nearest neighbours in local search is set to default 20
+Note: Don't-look-bits flag is set to default true
+
+reading tsp-file tsp/eil51.tsp ... 
+
+calculating distance matrix ..
+ .. done
+
+Parameter-settings:
+
+max_tries		 3
+max_tours		 10
+max_time		 3.0
+Utilities.seed		 -449133464
+optimum			 1
+n_ants			 10
+Ants.nn_ants		 20
+Ants.alpha		 1.0
+Ants.beta		 2.0
+Ants.rho		 0.1
+Ants.q_0		 0.98
+Ants.elitist_ants	 0
+Ants.ras_ranks		 0
+LocalSearch.ls_flag	 3
+LocalSearch.nn_ls	 20
+LocalSearch.dlb_flag	 true
+Ants.as_flag		 false
+Ants.eAnts.as_flag	 false
+rAnts.as_flag		 false
+mmAnts.as_flag		 false
+Ants.bwAnts.as_flag	 false
+Ants.acs_flag		 true
+
+
+allocate ants' memory ..
+ .. done
+
+Initialization took 0.033 seconds
+
+best 428, iteration: 1, time 0.009
+best 427, iteration: 4, time 0.019
+best so far 427, iteration: 100, time 0.122, b_fac 1.0784313725490196
+try 0 iteration 100, b-fac 1.0784313725490196
+best 426, iteration: 139, time 0.146
+best so far 426, iteration: 200, time 0.189, b_fac 1.2745098039215685
+try 0 iteration 200, b-fac 1.2745098039215685
+best so far 426, iteration: 300, time 0.267, b_fac 1.2549019607843137
+try 0 iteration 300, b-fac 1.2549019607843137
+best so far 426, iteration: 400, time 0.325, b_fac 1.1372549019607843
+try 0 iteration 400, b-fac 1.1372549019607843
+best so far 426, iteration: 500, time 0.378, b_fac 1.0588235294117647
+try 0 iteration 500, b-fac 1.0588235294117647
+best so far 426, iteration: 600, time 0.431, b_fac 1.0196078431372548
+try 0 iteration 600, b-fac 1.0196078431372548
+best so far 426, iteration: 700, time 0.486, b_fac 1.0
+try 0 iteration 700, b-fac 1.0
+best so far 426, iteration: 800, time 0.556, b_fac 1.0
+try 0 iteration 800, b-fac 1.0
+best so far 426, iteration: 900, time 0.608, b_fac 1.0
+try 0 iteration 900, b-fac 1.0
+best so far 426, iteration: 1000, time 0.658, b_fac 1.0
+try 0 iteration 1000, b-fac 1.0
+best so far 426, iteration: 1100, time 0.709, b_fac 1.0
+try 0 iteration 1100, b-fac 1.0
+best so far 426, iteration: 1200, time 0.764, b_fac 1.0
+try 0 iteration 1200, b-fac 1.0
+best so far 426, iteration: 1300, time 0.833, b_fac 1.0
+try 0 iteration 1300, b-fac 1.0
+best so far 426, iteration: 1400, time 0.895, b_fac 1.0
+try 0 iteration 1400, b-fac 1.0
+best so far 426, iteration: 1500, time 0.955, b_fac 1.0
+try 0 iteration 1500, b-fac 1.0
+best so far 426, iteration: 1600, time 1.011, b_fac 1.0
+try 0 iteration 1600, b-fac 1.0
+best so far 426, iteration: 1700, time 1.071, b_fac 1.0
+try 0 iteration 1700, b-fac 1.0
+best so far 426, iteration: 1800, time 1.134, b_fac 1.0
+try 0 iteration 1800, b-fac 1.0
+best so far 426, iteration: 1900, time 1.203, b_fac 1.0
+try 0 iteration 1900, b-fac 1.0
+best so far 426, iteration: 2000, time 1.268, b_fac 1.0
+try 0 iteration 2000, b-fac 1.0
+best so far 426, iteration: 2100, time 1.333, b_fac 1.0
+try 0 iteration 2100, b-fac 1.0
+best so far 426, iteration: 2200, time 1.383, b_fac 1.0
+try 0 iteration 2200, b-fac 1.0
+best so far 426, iteration: 2300, time 1.445, b_fac 1.0
+try 0 iteration 2300, b-fac 1.0
+best so far 426, iteration: 2400, time 1.548, b_fac 1.0
+try 0 iteration 2400, b-fac 1.0
+best so far 426, iteration: 2500, time 1.598, b_fac 1.0
+try 0 iteration 2500, b-fac 1.0
+best so far 426, iteration: 2600, time 1.65, b_fac 1.0
+try 0 iteration 2600, b-fac 1.0
+best so far 426, iteration: 2700, time 1.713, b_fac 1.0
+try 0 iteration 2700, b-fac 1.0
+best so far 426, iteration: 2800, time 1.765, b_fac 1.0
+try 0 iteration 2800, b-fac 1.0
+best so far 426, iteration: 2900, time 1.819, b_fac 1.0
+try 0 iteration 2900, b-fac 1.0
+best so far 426, iteration: 3000, time 1.872, b_fac 1.0
+try 0 iteration 3000, b-fac 1.0
+best so far 426, iteration: 3100, time 1.923, b_fac 1.0
+try 0 iteration 3100, b-fac 1.0
+best so far 426, iteration: 3200, time 1.975, b_fac 1.0
+try 0 iteration 3200, b-fac 1.0
+best so far 426, iteration: 3300, time 2.03, b_fac 1.0
+try 0 iteration 3300, b-fac 1.0
+best so far 426, iteration: 3400, time 2.082, b_fac 1.0
+try 0 iteration 3400, b-fac 1.0
+best so far 426, iteration: 3500, time 2.135, b_fac 1.0
+try 0 iteration 3500, b-fac 1.0
+best so far 426, iteration: 3600, time 2.184, b_fac 1.0
+try 0 iteration 3600, b-fac 1.0
+best so far 426, iteration: 3700, time 2.233, b_fac 1.0
+try 0 iteration 3700, b-fac 1.0
+best so far 426, iteration: 3800, time 2.283, b_fac 1.0
+try 0 iteration 3800, b-fac 1.0
+best so far 426, iteration: 3900, time 2.337, b_fac 1.0
+try 0 iteration 3900, b-fac 1.0
+best so far 426, iteration: 4000, time 2.39, b_fac 1.0
+try 0 iteration 4000, b-fac 1.0
+best so far 426, iteration: 4100, time 2.44, b_fac 1.0
+try 0 iteration 4100, b-fac 1.0
+best so far 426, iteration: 4200, time 2.492, b_fac 1.0
+try 0 iteration 4200, b-fac 1.0
+best so far 426, iteration: 4300, time 2.544, b_fac 1.0
+try 0 iteration 4300, b-fac 1.0
+best so far 426, iteration: 4400, time 2.595, b_fac 1.0
+try 0 iteration 4400, b-fac 1.0
+best so far 426, iteration: 4500, time 2.63, b_fac 1.0
+try 0 iteration 4500, b-fac 1.0
+best so far 426, iteration: 4600, time 2.657, b_fac 1.0
+try 0 iteration 4600, b-fac 1.0
+best so far 426, iteration: 4700, time 2.685, b_fac 1.0
+try 0 iteration 4700, b-fac 1.0
+best so far 426, iteration: 4800, time 2.712, b_fac 1.0
+try 0 iteration 4800, b-fac 1.0
+best so far 426, iteration: 4900, time 2.743, b_fac 1.0
+try 0 iteration 4900, b-fac 1.0
+best so far 426, iteration: 5000, time 2.774, b_fac 1.0
+try 0 iteration 5000, b-fac 1.0
+best so far 426, iteration: 5100, time 2.804, b_fac 1.0
+try 0 iteration 5100, b-fac 1.0
+best so far 426, iteration: 5200, time 2.835, b_fac 1.0
+try 0 iteration 5200, b-fac 1.0
+best so far 426, iteration: 5300, time 2.862, b_fac 1.0
+try 0 iteration 5300, b-fac 1.0
+best so far 426, iteration: 5400, time 2.89, b_fac 1.0
+try 0 iteration 5400, b-fac 1.0
+best so far 426, iteration: 5500, time 2.921, b_fac 1.0
+try 0 iteration 5500, b-fac 1.0
+best so far 426, iteration: 5600, time 2.948, b_fac 1.0
+try 0 iteration 5600, b-fac 1.0
+best so far 426, iteration: 5700, time 2.977, b_fac 1.0
+try 0 iteration 5700, b-fac 1.0
+Best Solution in try 0 is 426
+ Best Solution was found after 139 iterations
+
+
+try 0, Best 426, found at iteration 139, found at time 0.146
+
+best 428, iteration: 1, time 0.001
+best 427, iteration: 2, time 0.002
+best so far 427, iteration: 100, time 0.03, b_fac 1.0588235294117647
+try 1 iteration 100, b-fac 1.0588235294117647
+best so far 427, iteration: 200, time 0.057, b_fac 1.0588235294117647
+try 1 iteration 200, b-fac 1.0588235294117647
+best 426, iteration: 211, time 0.06
+best so far 426, iteration: 300, time 0.085, b_fac 1.2745098039215685
+try 1 iteration 300, b-fac 1.2745098039215685
+best so far 426, iteration: 400, time 0.115, b_fac 1.1764705882352942
+try 1 iteration 400, b-fac 1.1764705882352942
+best so far 426, iteration: 500, time 0.142, b_fac 1.1470588235294117
+try 1 iteration 500, b-fac 1.1470588235294117
+best so far 426, iteration: 600, time 0.17, b_fac 1.0392156862745099
+try 1 iteration 600, b-fac 1.0392156862745099
+best so far 426, iteration: 700, time 0.197, b_fac 1.0
+try 1 iteration 700, b-fac 1.0
+best so far 426, iteration: 800, time 0.225, b_fac 1.0
+try 1 iteration 800, b-fac 1.0
+best so far 426, iteration: 900, time 0.254, b_fac 1.0
+try 1 iteration 900, b-fac 1.0
+best so far 426, iteration: 1000, time 0.284, b_fac 1.0
+try 1 iteration 1000, b-fac 1.0
+best so far 426, iteration: 1100, time 0.314, b_fac 1.0
+try 1 iteration 1100, b-fac 1.0
+best so far 426, iteration: 1200, time 0.345, b_fac 1.0
+try 1 iteration 1200, b-fac 1.0
+best so far 426, iteration: 1300, time 0.373, b_fac 1.0
+try 1 iteration 1300, b-fac 1.0
+best so far 426, iteration: 1400, time 0.4, b_fac 1.0
+try 1 iteration 1400, b-fac 1.0
+best so far 426, iteration: 1500, time 0.427, b_fac 1.0
+try 1 iteration 1500, b-fac 1.0
+best so far 426, iteration: 1600, time 0.456, b_fac 1.0
+try 1 iteration 1600, b-fac 1.0
+best so far 426, iteration: 1700, time 0.486, b_fac 1.0
+try 1 iteration 1700, b-fac 1.0
+best so far 426, iteration: 1800, time 0.515, b_fac 1.0
+try 1 iteration 1800, b-fac 1.0
+best so far 426, iteration: 1900, time 0.543, b_fac 1.0
+try 1 iteration 1900, b-fac 1.0
+best so far 426, iteration: 2000, time 0.574, b_fac 1.0
+try 1 iteration 2000, b-fac 1.0
+best so far 426, iteration: 2100, time 0.602, b_fac 1.0
+try 1 iteration 2100, b-fac 1.0
+best so far 426, iteration: 2200, time 0.629, b_fac 1.0
+try 1 iteration 2200, b-fac 1.0
+best so far 426, iteration: 2300, time 0.657, b_fac 1.0
+try 1 iteration 2300, b-fac 1.0
+best so far 426, iteration: 2400, time 0.684, b_fac 1.0
+try 1 iteration 2400, b-fac 1.0
+best so far 426, iteration: 2500, time 0.713, b_fac 1.0
+try 1 iteration 2500, b-fac 1.0
+best so far 426, iteration: 2600, time 0.74, b_fac 1.0
+try 1 iteration 2600, b-fac 1.0
+best so far 426, iteration: 2700, time 0.767, b_fac 1.0
+try 1 iteration 2700, b-fac 1.0
+best so far 426, iteration: 2800, time 0.794, b_fac 1.0
+try 1 iteration 2800, b-fac 1.0
+best so far 426, iteration: 2900, time 0.823, b_fac 1.0
+try 1 iteration 2900, b-fac 1.0
+best so far 426, iteration: 3000, time 0.852, b_fac 1.0
+try 1 iteration 3000, b-fac 1.0
+best so far 426, iteration: 3100, time 0.879, b_fac 1.0
+try 1 iteration 3100, b-fac 1.0
+best so far 426, iteration: 3200, time 0.907, b_fac 1.0
+try 1 iteration 3200, b-fac 1.0
+best so far 426, iteration: 3300, time 0.934, b_fac 1.0
+try 1 iteration 3300, b-fac 1.0
+best so far 426, iteration: 3400, time 0.964, b_fac 1.0
+try 1 iteration 3400, b-fac 1.0
+best so far 426, iteration: 3500, time 0.991, b_fac 1.0
+try 1 iteration 3500, b-fac 1.0
+best so far 426, iteration: 3600, time 1.018, b_fac 1.0
+try 1 iteration 3600, b-fac 1.0
+best so far 426, iteration: 3700, time 1.048, b_fac 1.0
+try 1 iteration 3700, b-fac 1.0
+best so far 426, iteration: 3800, time 1.075, b_fac 1.0
+try 1 iteration 3800, b-fac 1.0
+best so far 426, iteration: 3900, time 1.103, b_fac 1.0
+try 1 iteration 3900, b-fac 1.0
+best so far 426, iteration: 4000, time 1.132, b_fac 1.0
+try 1 iteration 4000, b-fac 1.0
+best so far 426, iteration: 4100, time 1.163, b_fac 1.0
+try 1 iteration 4100, b-fac 1.0
+best so far 426, iteration: 4200, time 1.192, b_fac 1.0
+try 1 iteration 4200, b-fac 1.0
+best so far 426, iteration: 4300, time 1.221, b_fac 1.0
+try 1 iteration 4300, b-fac 1.0
+best so far 426, iteration: 4400, time 1.249, b_fac 1.0
+try 1 iteration 4400, b-fac 1.0
+best so far 426, iteration: 4500, time 1.281, b_fac 1.0
+try 1 iteration 4500, b-fac 1.0
+best so far 426, iteration: 4600, time 1.31, b_fac 1.0
+try 1 iteration 4600, b-fac 1.0
+best so far 426, iteration: 4700, time 1.341, b_fac 1.0
+try 1 iteration 4700, b-fac 1.0
+best so far 426, iteration: 4800, time 1.37, b_fac 1.0
+try 1 iteration 4800, b-fac 1.0
+best so far 426, iteration: 4900, time 1.399, b_fac 1.0
+try 1 iteration 4900, b-fac 1.0
+best so far 426, iteration: 5000, time 1.428, b_fac 1.0
+try 1 iteration 5000, b-fac 1.0
+best so far 426, iteration: 5100, time 1.457, b_fac 1.0
+try 1 iteration 5100, b-fac 1.0
+best so far 426, iteration: 5200, time 1.487, b_fac 1.0
+try 1 iteration 5200, b-fac 1.0
+best so far 426, iteration: 5300, time 1.516, b_fac 1.0
+try 1 iteration 5300, b-fac 1.0
+best so far 426, iteration: 5400, time 1.546, b_fac 1.0
+try 1 iteration 5400, b-fac 1.0
+best so far 426, iteration: 5500, time 1.576, b_fac 1.0
+try 1 iteration 5500, b-fac 1.0
+best so far 426, iteration: 5600, time 1.605, b_fac 1.0
+try 1 iteration 5600, b-fac 1.0
+best so far 426, iteration: 5700, time 1.634, b_fac 1.0
+try 1 iteration 5700, b-fac 1.0
+best so far 426, iteration: 5800, time 1.666, b_fac 1.0
+try 1 iteration 5800, b-fac 1.0
+best so far 426, iteration: 5900, time 1.699, b_fac 1.0
+try 1 iteration 5900, b-fac 1.0
+best so far 426, iteration: 6000, time 1.73, b_fac 1.0
+try 1 iteration 6000, b-fac 1.0
+best so far 426, iteration: 6100, time 1.76, b_fac 1.0
+try 1 iteration 6100, b-fac 1.0
+best so far 426, iteration: 6200, time 1.789, b_fac 1.0
+try 1 iteration 6200, b-fac 1.0
+best so far 426, iteration: 6300, time 1.819, b_fac 1.0
+try 1 iteration 6300, b-fac 1.0
+best so far 426, iteration: 6400, time 1.851, b_fac 1.0
+try 1 iteration 6400, b-fac 1.0
+best so far 426, iteration: 6500, time 1.881, b_fac 1.0
+try 1 iteration 6500, b-fac 1.0
+best so far 426, iteration: 6600, time 1.91, b_fac 1.0
+try 1 iteration 6600, b-fac 1.0
+best so far 426, iteration: 6700, time 1.94, b_fac 1.0
+try 1 iteration 6700, b-fac 1.0
+best so far 426, iteration: 6800, time 1.972, b_fac 1.0
+try 1 iteration 6800, b-fac 1.0
+best so far 426, iteration: 6900, time 2.005, b_fac 1.0
+try 1 iteration 6900, b-fac 1.0
+best so far 426, iteration: 7000, time 2.036, b_fac 1.0
+try 1 iteration 7000, b-fac 1.0
+best so far 426, iteration: 7100, time 2.067, b_fac 1.0
+try 1 iteration 7100, b-fac 1.0
+best so far 426, iteration: 7200, time 2.096, b_fac 1.0
+try 1 iteration 7200, b-fac 1.0
+best so far 426, iteration: 7300, time 2.125, b_fac 1.0
+try 1 iteration 7300, b-fac 1.0
+best so far 426, iteration: 7400, time 2.153, b_fac 1.0
+try 1 iteration 7400, b-fac 1.0
+best so far 426, iteration: 7500, time 2.182, b_fac 1.0
+try 1 iteration 7500, b-fac 1.0
+best so far 426, iteration: 7600, time 2.211, b_fac 1.0
+try 1 iteration 7600, b-fac 1.0
+best so far 426, iteration: 7700, time 2.244, b_fac 1.0
+try 1 iteration 7700, b-fac 1.0
+best so far 426, iteration: 7800, time 2.272, b_fac 1.0
+try 1 iteration 7800, b-fac 1.0
+best so far 426, iteration: 7900, time 2.301, b_fac 1.0
+try 1 iteration 7900, b-fac 1.0
+best so far 426, iteration: 8000, time 2.333, b_fac 1.0
+try 1 iteration 8000, b-fac 1.0
+best so far 426, iteration: 8100, time 2.364, b_fac 1.0
+try 1 iteration 8100, b-fac 1.0
+best so far 426, iteration: 8200, time 2.395, b_fac 1.0
+try 1 iteration 8200, b-fac 1.0
+best so far 426, iteration: 8300, time 2.427, b_fac 1.0
+try 1 iteration 8300, b-fac 1.0
+best so far 426, iteration: 8400, time 2.458, b_fac 1.0
+try 1 iteration 8400, b-fac 1.0
+best so far 426, iteration: 8500, time 2.49, b_fac 1.0
+try 1 iteration 8500, b-fac 1.0
+best so far 426, iteration: 8600, time 2.522, b_fac 1.0
+try 1 iteration 8600, b-fac 1.0
+best so far 426, iteration: 8700, time 2.553, b_fac 1.0
+try 1 iteration 8700, b-fac 1.0
+best so far 426, iteration: 8800, time 2.584, b_fac 1.0
+try 1 iteration 8800, b-fac 1.0
+best so far 426, iteration: 8900, time 2.619, b_fac 1.0
+try 1 iteration 8900, b-fac 1.0
+best so far 426, iteration: 9000, time 2.648, b_fac 1.0
+try 1 iteration 9000, b-fac 1.0
+best so far 426, iteration: 9100, time 2.677, b_fac 1.0
+try 1 iteration 9100, b-fac 1.0
+best so far 426, iteration: 9200, time 2.708, b_fac 1.0
+try 1 iteration 9200, b-fac 1.0
+best so far 426, iteration: 9300, time 2.738, b_fac 1.0
+try 1 iteration 9300, b-fac 1.0
+best so far 426, iteration: 9400, time 2.772, b_fac 1.0
+try 1 iteration 9400, b-fac 1.0
+best so far 426, iteration: 9500, time 2.8, b_fac 1.0
+try 1 iteration 9500, b-fac 1.0
+best so far 426, iteration: 9600, time 2.83, b_fac 1.0
+try 1 iteration 9600, b-fac 1.0
+best so far 426, iteration: 9700, time 2.861, b_fac 1.0
+try 1 iteration 9700, b-fac 1.0
+best so far 426, iteration: 9800, time 2.892, b_fac 1.0
+try 1 iteration 9800, b-fac 1.0
+best so far 426, iteration: 9900, time 2.926, b_fac 1.0
+try 1 iteration 9900, b-fac 1.0
+best so far 426, iteration: 10000, time 2.954, b_fac 1.0
+try 1 iteration 10000, b-fac 1.0
+best so far 426, iteration: 10100, time 2.983, b_fac 1.0
+try 1 iteration 10100, b-fac 1.0
+Best Solution in try 1 is 426
+ Best Solution was found after 211 iterations
+
+
+try 1, Best 426, found at iteration 211, found at time 0.06
+
+best 428, iteration: 1, time 0.001
+best 427, iteration: 7, time 0.003
+best so far 427, iteration: 100, time 0.033, b_fac 1.0784313725490196
+try 2 iteration 100, b-fac 1.0784313725490196
+best so far 427, iteration: 200, time 0.063, b_fac 1.0588235294117647
+try 2 iteration 200, b-fac 1.0588235294117647
+best 426, iteration: 223, time 0.069
+best so far 426, iteration: 300, time 0.094, b_fac 1.3137254901960784
+try 2 iteration 300, b-fac 1.3137254901960784
+best so far 426, iteration: 400, time 0.136, b_fac 1.2745098039215685
+try 2 iteration 400, b-fac 1.2745098039215685
+best so far 426, iteration: 500, time 0.174, b_fac 1.1568627450980393
+try 2 iteration 500, b-fac 1.1568627450980393
+best so far 426, iteration: 600, time 0.202, b_fac 1.0784313725490196
+try 2 iteration 600, b-fac 1.0784313725490196
+best so far 426, iteration: 700, time 0.231, b_fac 1.0392156862745099
+try 2 iteration 700, b-fac 1.0392156862745099
+best so far 426, iteration: 800, time 0.265, b_fac 1.0392156862745099
+try 2 iteration 800, b-fac 1.0392156862745099
+best so far 426, iteration: 900, time 0.292, b_fac 1.0196078431372548
+try 2 iteration 900, b-fac 1.0196078431372548
+best so far 426, iteration: 1000, time 0.321, b_fac 1.0
+try 2 iteration 1000, b-fac 1.0
+best so far 426, iteration: 1100, time 0.352, b_fac 1.0
+try 2 iteration 1100, b-fac 1.0
+best so far 426, iteration: 1200, time 0.379, b_fac 1.0
+try 2 iteration 1200, b-fac 1.0
+best so far 426, iteration: 1300, time 0.409, b_fac 1.0
+try 2 iteration 1300, b-fac 1.0
+best so far 426, iteration: 1400, time 0.439, b_fac 1.0
+try 2 iteration 1400, b-fac 1.0
+best so far 426, iteration: 1500, time 0.466, b_fac 1.0
+try 2 iteration 1500, b-fac 1.0
+best so far 426, iteration: 1600, time 0.496, b_fac 1.0
+try 2 iteration 1600, b-fac 1.0
+best so far 426, iteration: 1700, time 0.526, b_fac 1.0
+try 2 iteration 1700, b-fac 1.0
+best so far 426, iteration: 1800, time 0.554, b_fac 1.0
+try 2 iteration 1800, b-fac 1.0
+best so far 426, iteration: 1900, time 0.582, b_fac 1.0
+try 2 iteration 1900, b-fac 1.0
+best so far 426, iteration: 2000, time 0.613, b_fac 1.0
+try 2 iteration 2000, b-fac 1.0
+best so far 426, iteration: 2100, time 0.641, b_fac 1.0
+try 2 iteration 2100, b-fac 1.0
+best so far 426, iteration: 2200, time 0.674, b_fac 1.0
+try 2 iteration 2200, b-fac 1.0
+best so far 426, iteration: 2300, time 0.701, b_fac 1.0
+try 2 iteration 2300, b-fac 1.0
+best so far 426, iteration: 2400, time 0.728, b_fac 1.0
+try 2 iteration 2400, b-fac 1.0
+best so far 426, iteration: 2500, time 0.758, b_fac 1.0
+try 2 iteration 2500, b-fac 1.0
+best so far 426, iteration: 2600, time 0.784, b_fac 1.0
+try 2 iteration 2600, b-fac 1.0
+best so far 426, iteration: 2700, time 0.814, b_fac 1.0
+try 2 iteration 2700, b-fac 1.0
+best so far 426, iteration: 2800, time 0.845, b_fac 1.0
+try 2 iteration 2800, b-fac 1.0
+best so far 426, iteration: 2900, time 0.873, b_fac 1.0
+try 2 iteration 2900, b-fac 1.0
+best so far 426, iteration: 3000, time 0.902, b_fac 1.0
+try 2 iteration 3000, b-fac 1.0
+best so far 426, iteration: 3100, time 0.93, b_fac 1.0
+try 2 iteration 3100, b-fac 1.0
+best so far 426, iteration: 3200, time 0.959, b_fac 1.0
+try 2 iteration 3200, b-fac 1.0
+best so far 426, iteration: 3300, time 0.989, b_fac 1.0
+try 2 iteration 3300, b-fac 1.0
+best so far 426, iteration: 3400, time 1.021, b_fac 1.0
+try 2 iteration 3400, b-fac 1.0
+best so far 426, iteration: 3500, time 1.051, b_fac 1.0
+try 2 iteration 3500, b-fac 1.0
+best so far 426, iteration: 3600, time 1.078, b_fac 1.0
+try 2 iteration 3600, b-fac 1.0
+best so far 426, iteration: 3700, time 1.105, b_fac 1.0
+try 2 iteration 3700, b-fac 1.0
+best so far 426, iteration: 3800, time 1.137, b_fac 1.0
+try 2 iteration 3800, b-fac 1.0
+best so far 426, iteration: 3900, time 1.168, b_fac 1.0
+try 2 iteration 3900, b-fac 1.0
+best so far 426, iteration: 4000, time 1.199, b_fac 1.0
+try 2 iteration 4000, b-fac 1.0
+best so far 426, iteration: 4100, time 1.227, b_fac 1.0
+try 2 iteration 4100, b-fac 1.0
+best so far 426, iteration: 4200, time 1.254, b_fac 1.0
+try 2 iteration 4200, b-fac 1.0
+best so far 426, iteration: 4300, time 1.281, b_fac 1.0
+try 2 iteration 4300, b-fac 1.0
+best so far 426, iteration: 4400, time 1.307, b_fac 1.0
+try 2 iteration 4400, b-fac 1.0
+best so far 426, iteration: 4500, time 1.336, b_fac 1.0
+try 2 iteration 4500, b-fac 1.0
+best so far 426, iteration: 4600, time 1.365, b_fac 1.0
+try 2 iteration 4600, b-fac 1.0
+best so far 426, iteration: 4700, time 1.393, b_fac 1.0
+try 2 iteration 4700, b-fac 1.0
+best so far 426, iteration: 4800, time 1.421, b_fac 1.0
+try 2 iteration 4800, b-fac 1.0
+best so far 426, iteration: 4900, time 1.448, b_fac 1.0
+try 2 iteration 4900, b-fac 1.0
+best so far 426, iteration: 5000, time 1.475, b_fac 1.0
+try 2 iteration 5000, b-fac 1.0
+best so far 426, iteration: 5100, time 1.502, b_fac 1.0
+try 2 iteration 5100, b-fac 1.0
+best so far 426, iteration: 5200, time 1.53, b_fac 1.0
+try 2 iteration 5200, b-fac 1.0
+best so far 426, iteration: 5300, time 1.561, b_fac 1.0
+try 2 iteration 5300, b-fac 1.0
+best so far 426, iteration: 5400, time 1.588, b_fac 1.0
+try 2 iteration 5400, b-fac 1.0
+best so far 426, iteration: 5500, time 1.616, b_fac 1.0
+try 2 iteration 5500, b-fac 1.0
+best so far 426, iteration: 5600, time 1.643, b_fac 1.0
+try 2 iteration 5600, b-fac 1.0
+best so far 426, iteration: 5700, time 1.671, b_fac 1.0
+try 2 iteration 5700, b-fac 1.0
+best so far 426, iteration: 5800, time 1.698, b_fac 1.0
+try 2 iteration 5800, b-fac 1.0
+best so far 426, iteration: 5900, time 1.726, b_fac 1.0
+try 2 iteration 5900, b-fac 1.0
+best so far 426, iteration: 6000, time 1.754, b_fac 1.0
+try 2 iteration 6000, b-fac 1.0
+best so far 426, iteration: 6100, time 1.781, b_fac 1.0
+try 2 iteration 6100, b-fac 1.0
+best so far 426, iteration: 6200, time 1.809, b_fac 1.0
+try 2 iteration 6200, b-fac 1.0
+best so far 426, iteration: 6300, time 1.838, b_fac 1.0
+try 2 iteration 6300, b-fac 1.0
+best so far 426, iteration: 6400, time 1.867, b_fac 1.0
+try 2 iteration 6400, b-fac 1.0
+best so far 426, iteration: 6500, time 1.896, b_fac 1.0
+try 2 iteration 6500, b-fac 1.0
+best so far 426, iteration: 6600, time 1.923, b_fac 1.0
+try 2 iteration 6600, b-fac 1.0
+best so far 426, iteration: 6700, time 1.949, b_fac 1.0
+try 2 iteration 6700, b-fac 1.0
+best so far 426, iteration: 6800, time 1.976, b_fac 1.0
+try 2 iteration 6800, b-fac 1.0
+best so far 426, iteration: 6900, time 2.006, b_fac 1.0
+try 2 iteration 6900, b-fac 1.0
+best so far 426, iteration: 7000, time 2.034, b_fac 1.0
+try 2 iteration 7000, b-fac 1.0
+best so far 426, iteration: 7100, time 2.063, b_fac 1.0
+try 2 iteration 7100, b-fac 1.0
+best so far 426, iteration: 7200, time 2.091, b_fac 1.0
+try 2 iteration 7200, b-fac 1.0
+best so far 426, iteration: 7300, time 2.124, b_fac 1.0
+try 2 iteration 7300, b-fac 1.0
+best so far 426, iteration: 7400, time 2.153, b_fac 1.0
+try 2 iteration 7400, b-fac 1.0
+best so far 426, iteration: 7500, time 2.182, b_fac 1.0
+try 2 iteration 7500, b-fac 1.0
+best so far 426, iteration: 7600, time 2.209, b_fac 1.0
+try 2 iteration 7600, b-fac 1.0
+best so far 426, iteration: 7700, time 2.236, b_fac 1.0
+try 2 iteration 7700, b-fac 1.0
+best so far 426, iteration: 7800, time 2.264, b_fac 1.0
+try 2 iteration 7800, b-fac 1.0
+best so far 426, iteration: 7900, time 2.291, b_fac 1.0
+try 2 iteration 7900, b-fac 1.0
+best so far 426, iteration: 8000, time 2.319, b_fac 1.0
+try 2 iteration 8000, b-fac 1.0
+best so far 426, iteration: 8100, time 2.352, b_fac 1.0
+try 2 iteration 8100, b-fac 1.0
+best so far 426, iteration: 8200, time 2.38, b_fac 1.0
+try 2 iteration 8200, b-fac 1.0
+best so far 426, iteration: 8300, time 2.408, b_fac 1.0
+try 2 iteration 8300, b-fac 1.0
+best so far 426, iteration: 8400, time 2.436, b_fac 1.0
+try 2 iteration 8400, b-fac 1.0
+best so far 426, iteration: 8500, time 2.465, b_fac 1.0
+try 2 iteration 8500, b-fac 1.0
+best so far 426, iteration: 8600, time 2.493, b_fac 1.0
+try 2 iteration 8600, b-fac 1.0
+best so far 426, iteration: 8700, time 2.52, b_fac 1.0
+try 2 iteration 8700, b-fac 1.0
+best so far 426, iteration: 8800, time 2.548, b_fac 1.0
+try 2 iteration 8800, b-fac 1.0
+best so far 426, iteration: 8900, time 2.575, b_fac 1.0
+try 2 iteration 8900, b-fac 1.0
+best so far 426, iteration: 9000, time 2.606, b_fac 1.0
+try 2 iteration 9000, b-fac 1.0
+best so far 426, iteration: 9100, time 2.632, b_fac 1.0
+try 2 iteration 9100, b-fac 1.0
+best so far 426, iteration: 9200, time 2.659, b_fac 1.0
+try 2 iteration 9200, b-fac 1.0
+best so far 426, iteration: 9300, time 2.686, b_fac 1.0
+try 2 iteration 9300, b-fac 1.0
+best so far 426, iteration: 9400, time 2.712, b_fac 1.0
+try 2 iteration 9400, b-fac 1.0
+best so far 426, iteration: 9500, time 2.742, b_fac 1.0
+try 2 iteration 9500, b-fac 1.0
+best so far 426, iteration: 9600, time 2.769, b_fac 1.0
+try 2 iteration 9600, b-fac 1.0
+best so far 426, iteration: 9700, time 2.796, b_fac 1.0
+try 2 iteration 9700, b-fac 1.0
+best so far 426, iteration: 9800, time 2.824, b_fac 1.0
+try 2 iteration 9800, b-fac 1.0
+best so far 426, iteration: 9900, time 2.855, b_fac 1.0
+try 2 iteration 9900, b-fac 1.0
+best so far 426, iteration: 10000, time 2.887, b_fac 1.0
+try 2 iteration 10000, b-fac 1.0
+best so far 426, iteration: 10100, time 2.919, b_fac 1.0
+try 2 iteration 10100, b-fac 1.0
+best so far 426, iteration: 10200, time 2.949, b_fac 1.0
+try 2 iteration 10200, b-fac 1.0
+best so far 426, iteration: 10300, time 2.977, b_fac 1.0
+try 2 iteration 10300, b-fac 1.0
+Best Solution in try 2 is 426
+ Best Solution was found after 223 iterations
+
+
+try 2, Best 426, found at iteration 223, found at time 0.069
+
+ t_avgbest = 0.09166666666666667
+ t_avgtotal = 3.0
+
+Best tour:
+426
+[37, 4, 36, 16, 3, 17, 46, 11, 45, 50, 26, 5, 47, 22, 6, 42, 23, 13, 24, 12, 40, 18, 39, 41, 43, 14, 44, 32, 38, 9, 48, 8, 29, 33, 49, 15, 20, 28, 1, 19, 34, 35, 2, 27, 30, 25, 7, 21, 0, 31, 10, 37]
