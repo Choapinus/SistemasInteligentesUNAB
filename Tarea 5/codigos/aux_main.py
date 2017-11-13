@@ -25,7 +25,9 @@ if __name__ == '__main__':
 		print 'fitness decrement', str(fit)
 		print
 		gal.run(fit)
-		fit += gal.max_population/gal.max_generation
+		if fit > str(min(map(lambda x: x.fitness, gal.actual_population))):
+			fit += gal.max_population/gal.max_generation
+		else fit += 0.1
 		#sleep(1)
 
 	# print 'min fitness: ', min(map(lambda x: x.fitness, gal.actual_population))

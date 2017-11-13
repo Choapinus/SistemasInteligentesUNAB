@@ -6,7 +6,7 @@ from Genetic import GeneticAlgorithm
 
 
 def gen_thread1(tsp):
-	gal = GeneticAlgorithm(tsp, max_pop = 1000, max_gen = 10000, max_fit=140000.0, mut_rate=0.3)
+	gal = GeneticAlgorithm(tsp, max_pop = 1000, max_gen = 1000, max_fit=140000.0, mut_rate=0.25)
 	fit = 0.0
 
 	for i in range(gal.max_generation):
@@ -16,7 +16,11 @@ def gen_thread1(tsp):
 		print 'fitness decrement', str(fit)
 		print
 		gal.run(fit)
-		fit += gal.max_population*2.0/gal.max_generation
+		
+		if fit > str(min(map(lambda x: x.fitness, gal.actual_population))):
+			#fit += gal.max_population*2.0/gal.max_generation
+			fit += 30.0
+		else: fit += 0.1
 
 	file = open('gen1.json', 'w')
 
@@ -32,7 +36,7 @@ def gen_thread1(tsp):
 	print '\nbest fitness actual pop: ', min(map(lambda x: x.fitness, gal.actual_population))
 
 def gen_thread2(tsp):
-	gal = GeneticAlgorithm(tsp, max_pop = 10000, max_gen = 1000, max_fit=140000.0, mut_rate=0.15)
+	gal = GeneticAlgorithm(tsp, max_pop = 1000, max_gen = 1000, max_fit=140000.0, mut_rate=0.15)
 	fit = 0.0
 
 	for i in range(gal.max_generation):
@@ -42,7 +46,11 @@ def gen_thread2(tsp):
 		print 'fitness decrement', str(fit)
 		print
 		gal.run(fit)
-		fit += gal.max_population*2.0/gal.max_generation
+		
+		if fit > str(min(map(lambda x: x.fitness, gal.actual_population))):
+			#fit += gal.max_population*2.0/gal.max_generation
+			fit += 40.0
+		else: fit += 0.1
 
 	file = open('gen2.json', 'w')
 
@@ -58,8 +66,8 @@ def gen_thread2(tsp):
 	print '\nbest fitness actual pop: ', min(map(lambda x: x.fitness, gal.actual_population))
 
 
-tsp = TSP('../test/a280.tsp')  # con espacios al principio, 280 elementos
-# tsp = TSP('../test/Nueva Carpeta/att48.tsp')  # sin espacios al principio, 48 elementos
+# tsp = TSP('../test/a280.tsp')  # con espacios al principio, 280 elementos
+tsp = TSP('../test/Nueva Carpeta/att48.tsp')  # sin espacios al principio, 48 elementos
 # tsp = TSP('../test/Nueva Carpeta/ch130.tsp')  # sin espacios al principio, 130 elementos
 
 # print json.dumps(tsp, default=lambda o: o.__dict__) #best wea ever
@@ -78,8 +86,9 @@ t1.start()
 t2.start()
 
 while t1.isAlive() or t2.isAlive():
-	if t1.isAlive(): print t1.getName(), 'is runing'
-	if t2.isAlive(): print t2.getName(), 'is runing\n'
+	#if t1.isAlive(): print t1.getName(), 'is runing'
+	#if t2.isAlive(): print t2.getName(), 'is runing\n'
+	pass
 
 
 #ahora son funciones distintas para cada thread
