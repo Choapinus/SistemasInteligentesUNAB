@@ -1,4 +1,5 @@
 import json
+import datetime
 import threading
 from TSP import TSP
 from time import sleep
@@ -36,7 +37,7 @@ def gen_thread1(tsp):
 	print '\nbest fitness actual pop: ', min(map(lambda x: x.fitness, gal.actual_population))
 
 def gen_thread2(tsp):
-	gal = GeneticAlgorithm(tsp, max_pop = 1000, max_gen = 1000, max_fit=140000.0, mut_rate=0.15)
+	gal = GeneticAlgorithm(tsp, max_pop = 1000, max_gen = 1000, max_fit=140000.0, mut_rate=0.25)
 	fit = 0.0
 
 	for i in range(gal.max_generation):
@@ -76,21 +77,26 @@ tsp = TSP('../test/Nueva Carpeta/att48.tsp')  # sin espacios al principio, 48 el
 # tsp = TSP('../test/Nueva Carpeta/mine.tsp')  # custom, 20 elements
 
 
-t1 = threading.Thread(target=gen_thread1, args=(tsp,), name='gen_1')
-t1.daemon = True
+#t1 = threading.Thread(target=gen_thread1, args=(tsp,), name='gen_1')
+#t1.daemon = True
 
 t2 = threading.Thread(target=gen_thread2, args=(tsp,), name='gen_2')
 t2.daemon = True
 
-t1.start()
+t_init = datetime.datetime.now()
+
+#t1.start()
 t2.start()
 
-while t1.isAlive() or t2.isAlive():
+#while t1.isAlive() or t2.isAlive():
+while t2.isAlive():
 	#if t1.isAlive(): print t1.getName(), 'is runing'
 	#if t2.isAlive(): print t2.getName(), 'is runing\n'
 	pass
 
+t_end = datetime.datetime.now()
+
+print(t_end-t_init)
+
 
 #ahora son funciones distintas para cada thread
-#verificar si con la mutacion mejora o no. Si fitness_actual < mutacion, desechar mutacion, else, mutar
-#no se puede estimar cuanto se demora
