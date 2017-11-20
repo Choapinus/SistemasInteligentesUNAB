@@ -4,7 +4,7 @@ from operator import sub, div, add
 from random import random, randint
 
 
-class Gen(Node):
+class Gen(Node): #inherets from Node class
 	"""
 	A Gen is basically used to represent a Chromosome
 	It's only by convention
@@ -20,20 +20,20 @@ class Chromosome(object):
 	"""
 	A Chromosome represents a possible solution (path)
 	The path is a (collection) list of gens. 
-	improtant: The head of the path will also be in the tail ( path.append(path[0]) )
+	important: The head of the path will also be in the tail ( path.append(path[0]) )
 	"""
 
 	def __init__(self, list_of_gens, exp_fit=150000.0, dist_function=0, mutate_prob=0.2):
 		"""
 		list_of_gens must be a list of Gens objects.
-		exp_fit is expected fitness. default = 30000.0
+		exp_fit is expected fitness. default = 150000.0
 		For the fitness function:
 			dist_function = 0 => euclidean dist (default)
 			dist_function = 1 => manhattan dist
 			dist_function = 2 => canberra dist
 			dist_function = 3 => squared_cord // beware
 			dist_function = 4 => squared_chi_squared
-		mutate_prob is the given mutation probability. default = 0.5
+		mutate_prob is the given mutation probability. default = 0.2
 		mutation_prob is the own probability to mute. Random float between [0, 1]
 
 		"""
